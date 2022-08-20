@@ -61,7 +61,7 @@
 											"top": 183,
 											"width": 102,
 											"height": 13,
-											"text": "Clase01"
+											"text": "Paciente"
 										},
 										{
 											"_type": "LabelView",
@@ -893,7 +893,8 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Clase01"
+					"name": "Paciente",
+					"visibility": "private"
 				},
 				{
 					"_type": "UMLClass",
