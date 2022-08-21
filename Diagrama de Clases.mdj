@@ -59,7 +59,7 @@
 											"font": "Arial;13;1",
 											"left": 413,
 											"top": 183,
-											"width": 102,
+											"width": 102.958984375,
 											"height": 13,
 											"text": "Paciente"
 										},
@@ -90,7 +90,7 @@
 									"font": "Arial;13;0",
 									"left": 408,
 									"top": 176,
-									"width": 112,
+									"width": 112.958984375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGCvJkX1pA8N1k="
@@ -114,11 +114,64 @@
 									"model": {
 										"$ref": "AAAAAAGCvJkX1JA4ulM="
 									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGCwWFvuO5jZZE=",
+											"_parent": {
+												"$ref": "AAAAAAGCvJkX1pBADQo="
+											},
+											"model": {
+												"$ref": "AAAAAAGCwWFvZu5g6yY="
+											},
+											"font": "Arial;13;0",
+											"left": 413,
+											"top": 206,
+											"width": 102.958984375,
+											"height": 13,
+											"text": "-id: int",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGCwWHhke6SA4U=",
+											"_parent": {
+												"$ref": "AAAAAAGCvJkX1pBADQo="
+											},
+											"model": {
+												"$ref": "AAAAAAGCwWHhc+6PLYg="
+											},
+											"font": "Arial;13;0",
+											"left": 413,
+											"top": 221,
+											"width": 102.958984375,
+											"height": 13,
+											"text": "-Direccion: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGCwWJJ4u7BvNk=",
+											"_parent": {
+												"$ref": "AAAAAAGCvJkX1pBADQo="
+											},
+											"model": {
+												"$ref": "AAAAAAGCwWJJ0u6+KAk="
+											},
+											"font": "Arial;13;0",
+											"left": 413,
+											"top": 236,
+											"width": 102.958984375,
+											"height": 13,
+											"text": "-Ciudad: String",
+											"horizontalAlignment": 0
+										}
+									],
 									"font": "Arial;13;0",
 									"left": 408,
 									"top": 201,
-									"width": 112,
-									"height": 10
+									"width": 112.958984375,
+									"height": 53
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -131,8 +184,8 @@
 									},
 									"font": "Arial;13;0",
 									"left": 408,
-									"top": 211,
-									"width": 112,
+									"top": 254,
+									"width": 112.958984375,
 									"height": 10
 								},
 								{
@@ -168,7 +221,7 @@
 							"containerChangeable": true,
 							"left": 408,
 							"top": 176,
-							"width": 112,
+							"width": 112.958984375,
 							"height": 112,
 							"nameCompartment": {
 								"$ref": "AAAAAAGCvJkX1pA7pF0="
@@ -1558,7 +1611,39 @@
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
 					"name": "Paciente",
-					"visibility": "private"
+					"visibility": "private",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGCwWFvZu5g6yY=",
+							"_parent": {
+								"$ref": "AAAAAAGCvJkX1JA4ulM="
+							},
+							"name": "id",
+							"visibility": "private",
+							"type": "int"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGCwWHhc+6PLYg=",
+							"_parent": {
+								"$ref": "AAAAAAGCvJkX1JA4ulM="
+							},
+							"name": "Direccion",
+							"visibility": "private",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGCwWJJ0u6+KAk=",
+							"_parent": {
+								"$ref": "AAAAAAGCvJkX1JA4ulM="
+							},
+							"name": "Ciudad",
+							"visibility": "private",
+							"type": "String"
+						}
+					]
 				},
 				{
 					"_type": "UMLClass",
