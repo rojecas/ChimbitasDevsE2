@@ -601,7 +601,7 @@
 											"top": 111,
 											"width": 135,
 											"height": 13,
-											"text": "Género"
+											"text": "Cls_Género"
 										},
 										{
 											"_type": "LabelView",
@@ -857,7 +857,7 @@
 											"top": 335,
 											"width": 135.10986328125,
 											"height": 13,
-											"text": "Medicos"
+											"text": "Cls_Medicos"
 										},
 										{
 											"_type": "LabelView",
@@ -925,7 +925,7 @@
 											"top": 358,
 											"width": 135.10986328125,
 											"height": 13,
-											"text": "+Id: int",
+											"text": "-Id: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1326,7 +1326,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Género",
+					"name": "Cls_Género",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -1335,7 +1335,8 @@
 								"$ref": "AAAAAAGCxfoAWZ8BpBk="
 							},
 							"name": "Masculino",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1344,7 +1345,8 @@
 								"$ref": "AAAAAAGCxfoAWZ8BpBk="
 							},
 							"name": "Femenino",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1353,7 +1355,8 @@
 								"$ref": "AAAAAAGCxfoAWZ8BpBk="
 							},
 							"name": "Intersexual",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -1362,7 +1365,8 @@
 								"$ref": "AAAAAAGCxfoAWZ8BpBk="
 							},
 							"name": "No binario",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -1382,7 +1386,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Medicos",
+					"name": "Cls_Medicos",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
@@ -1391,6 +1395,7 @@
 								"$ref": "AAAAAAGCxf1eW59VbLs="
 							},
 							"name": "Id",
+							"visibility": "private",
 							"type": "int"
 						},
 						{
