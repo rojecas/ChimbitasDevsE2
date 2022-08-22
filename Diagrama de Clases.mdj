@@ -318,6 +318,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"top": -16,
 											"height": 13
 										},
 										{
@@ -328,7 +329,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 357,
-											"top": 447,
+											"top": 439,
 											"width": 168.57470703125,
 											"height": 13,
 											"text": "Cls_Paciente"
@@ -341,6 +342,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"top": -16,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -353,13 +355,14 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"top": -16,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 352,
-									"top": 440,
+									"top": 432,
 									"width": 178.57470703125,
 									"height": 25,
 									"stereotypeLabel": {
@@ -396,7 +399,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 357,
-											"top": 470,
+											"top": 462,
 											"width": 168.57470703125,
 											"height": 13,
 											"text": "-id: Int",
@@ -413,7 +416,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 357,
-											"top": 485,
+											"top": 477,
 											"width": 168.57470703125,
 											"height": 13,
 											"text": "-Dirección: String",
@@ -430,7 +433,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 357,
-											"top": 500,
+											"top": 492,
 											"width": 168.57470703125,
 											"height": 13,
 											"text": "-Latitud: Float",
@@ -447,7 +450,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 357,
-											"top": 515,
+											"top": 507,
 											"width": 168.57470703125,
 											"height": 13,
 											"text": "-Longitud: Float",
@@ -464,7 +467,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 357,
-											"top": 530,
+											"top": 522,
 											"width": 168.57470703125,
 											"height": 13,
 											"text": "-Ciudad: String",
@@ -481,7 +484,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 357,
-											"top": 545,
+											"top": 537,
 											"width": 168.57470703125,
 											"height": 13,
 											"text": "-FechaNacimiento: DateTime",
@@ -490,7 +493,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 352,
-									"top": 465,
+									"top": 457,
 									"width": 178.57470703125,
 									"height": 98
 								},
@@ -505,7 +508,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 352,
-									"top": 563,
+									"top": 555,
 									"width": 178.57470703125,
 									"height": 10
 								},
@@ -520,6 +523,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+									"top": -8,
 									"width": 10,
 									"height": 10
 								},
@@ -534,6 +538,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
+									"top": -8,
 									"width": 10,
 									"height": 10
 								}
@@ -541,7 +546,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 352,
-							"top": 440,
+							"top": 432,
 							"width": 178.57470703125,
 							"height": 133,
 							"nameCompartment": {
@@ -1096,7 +1101,7 @@
 											"top": 500,
 											"width": 122.83349609375,
 											"height": 13,
-											"text": "TipoSigno"
+											"text": "Cls_TipoSigno"
 										},
 										{
 											"_type": "LabelView",
@@ -1333,7 +1338,7 @@
 							"left": 16,
 							"top": 480,
 							"width": 132.83349609375,
-							"height": 137,
+							"height": 151,
 							"nameCompartment": {
 								"$ref": "AAAAAAGCxgln+dJ5tWE="
 							},
@@ -1398,7 +1403,7 @@
 											"top": 519,
 											"width": 131.7265625,
 											"height": 13,
-											"text": "SignoVital"
+											"text": "Cls_SignoVital"
 										},
 										{
 											"_type": "LabelView",
@@ -1606,7 +1611,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 173,
-									"top": 560,
+									"top": 564,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1627,7 +1632,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 173,
-									"top": 575,
+									"top": 579,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1648,7 +1653,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 174,
-									"top": 530,
+									"top": 534,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1668,8 +1673,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 172,
-									"top": 560,
+									"left": 173,
+									"top": 563,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -1690,7 +1695,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 170,
-									"top": 573,
+									"top": 577,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -1711,7 +1716,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 177,
-									"top": 533,
+									"top": 536,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -1731,7 +1736,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 154,
-									"top": 560,
+									"top": 563,
 									"width": 40.8408203125,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -1752,8 +1757,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 176,
-									"top": 573,
+									"left": 177,
+									"top": 577,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -1773,7 +1778,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 170,
-									"top": 532,
+									"top": 536,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -1818,7 +1823,7 @@
 								"$ref": "AAAAAAGCxgxCqNLyMz0="
 							},
 							"lineStyle": 1,
-							"points": "199:552;149:551",
+							"points": "199:555;149:555",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGCxg6PVdOt2hE="
@@ -2247,7 +2252,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "TipoSigno",
+					"name": "Cls_TipoSigno",
 					"literals": [
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -2255,7 +2260,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCxgln+NJ283o="
 							},
-							"name": "oximetría"
+							"name": "oximetría",
+							"visibility": "private"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -2263,7 +2269,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCxgln+NJ283o="
 							},
-							"name": "frecuenciaRespirtoria"
+							"name": "frecuenciaRespirtoria",
+							"visibility": "private"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -2271,7 +2278,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCxgln+NJ283o="
 							},
-							"name": "frecuenciaCardíaca"
+							"name": "frecuenciaCardíaca",
+							"visibility": "private"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -2279,7 +2287,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCxgln+NJ283o="
 							},
-							"name": "temperatura"
+							"name": "temperatura",
+							"visibility": "private"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -2287,7 +2296,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCxgln+NJ283o="
 							},
-							"name": "presiónArterial"
+							"name": "presiónArterial",
+							"visibility": "private"
 						},
 						{
 							"_type": "UMLEnumerationLiteral",
@@ -2295,7 +2305,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGCxgln+NJ283o="
 							},
-							"name": "glicemia"
+							"name": "glicemia",
+							"visibility": "private"
 						}
 					]
 				},
@@ -2305,7 +2316,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "SignoVital",
+					"name": "Cls_SignoVital",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
