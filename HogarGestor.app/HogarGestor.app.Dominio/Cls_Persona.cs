@@ -11,5 +11,6 @@ namespace HogarGestor.app.Dominio
        public string Nombre{get; set;}
        public string Apellido {get; set;}
        public string documento {get; set;}
+       public Genero Genero {get;  set;}
     }
 }
