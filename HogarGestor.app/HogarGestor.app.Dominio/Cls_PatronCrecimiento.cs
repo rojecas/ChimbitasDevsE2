@@ -12,8 +12,6 @@ namespace HogarGestor.app.Dominio
         public float Valor {get;set;}
 
         public TipoPartonC TipoPartonC {get; set;}
-  
-
 
 
 
