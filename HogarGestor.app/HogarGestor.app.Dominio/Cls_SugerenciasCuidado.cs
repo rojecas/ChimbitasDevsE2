@@ -7,8 +7,8 @@ namespace HogarGestor.app.Dominio
 {
     public class Cls_SugerenciasCuidado:Cls_Historia
     {
-       private int Id {get; set;} 
-       private DateOnly FechaHora {get; set;}
-       private String Descripcion {get; set;}
+       public int Id {get; set;} 
+       public DateOnly FechaHora {get; set;}
+       public String Descripcion {get; set;}
     }
 }

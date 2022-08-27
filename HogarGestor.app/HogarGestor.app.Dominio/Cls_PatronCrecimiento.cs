@@ -8,13 +8,8 @@ namespace HogarGestor.app.Dominio
     public class Cls_PatronCrecimiento
     {
         public int Id {get; set;}
-        public DateOnly FechaHora {get;set;}
+        public DateTime FechaHora {get;set;}
         public float Valor {get;set;}
-
         public TipoPartonC TipoPartonC {get; set;}
-
-
-
-         
     }
 }

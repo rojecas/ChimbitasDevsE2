@@ -7,6 +7,6 @@ namespace HogarGestor.app.Dominio
 {
     public class Cls_Historia:Cls_Beneficiario
     {
-       private int Id {get; set;} 
+       public int Id {get; set;} 
     }
 }
