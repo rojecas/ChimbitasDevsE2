@@ -1,6 +1,6 @@
 namespace HogarGestor.app.Dominio
 {
-    public class TipoPartonC
+    public enum TipoPatronC
     {
         Peso,
         PerimetroCefalico,
