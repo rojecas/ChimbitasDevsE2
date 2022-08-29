@@ -11,7 +11,7 @@ namespace HogarGestor.App.Persistencia.AppRepositorio
 
     public class AppContext
     {
-        public DbSet<Cls_> Personas {get;set;}
+        public DbSet<Cls_Persona> Personas {get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if(!optionsBuilder.IsConfigured){
