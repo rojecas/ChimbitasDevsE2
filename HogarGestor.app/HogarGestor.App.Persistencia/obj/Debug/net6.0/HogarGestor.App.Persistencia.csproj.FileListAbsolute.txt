@@ -1,0 +1,5 @@
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.csproj.AssemblyReference.cache
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.AssemblyInfoInputs.cache
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.AssemblyInfo.cs
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.csproj.CoreCompileInputs.cache

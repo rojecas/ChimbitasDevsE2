@@ -1,4 +1,4 @@
-namespace HogarGestor.App.Dominio
+namespace HogarGestor.app.Dominio
 {
     public enum TipoPatronC
     {

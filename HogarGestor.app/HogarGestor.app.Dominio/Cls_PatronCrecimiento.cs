@@ -10,6 +10,6 @@ namespace HogarGestor.app.Dominio
         public int Id {get; set;}
         public DateTime FechaHora {get;set;}
         public float Valor {get;set;}
-        public TipoPartonC TipoPartonC {get; set;}
+        public TipoPatronC TipoPatronC {get; set;}
     }
 }
