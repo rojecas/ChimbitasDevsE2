@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.app.Dominio\\HogarGestor.app.Dominio.csproj": {}
+    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj": {}
   },
   "projects": {
-    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.app.Dominio\\HogarGestor.app.Dominio.csproj": {
+    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.app.Dominio\\HogarGestor.app.Dominio.csproj",
+        "projectUniqueName": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj",
         "projectName": "HogarGestor.app.Dominio",
-        "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.app.Dominio\\HogarGestor.app.Dominio.csproj",
+        "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj",
         "packagesPath": "C:\\Users\\ServTec\\.nuget\\packages\\",
-        "outputPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.app.Dominio\\obj\\",
+        "outputPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ServTec\\AppData\\Roaming\\NuGet\\NuGet.Config"

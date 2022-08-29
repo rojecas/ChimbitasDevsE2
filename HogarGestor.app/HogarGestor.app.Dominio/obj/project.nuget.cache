@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CjXbRbvptlToeowqK5hMSoSXq4zoDEIAQf91vgvSfOnjhw7/YhpIPG8UB3EI7dGBu+yVOq2YCSty/M3PtLAKnQ==",
+  "dgSpecHash": "aM0+j7jfNed5xK60OdeuIhJVfkNLzub0Fb+E9p2skzg+h+p9bFbTksvDhAFNIbfC5HkNkRLOVmHWdq8cV4pQxw==",
   "success": true,
-  "projectFilePath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.app.Dominio\\HogarGestor.app.Dominio.csproj",
+  "projectFilePath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

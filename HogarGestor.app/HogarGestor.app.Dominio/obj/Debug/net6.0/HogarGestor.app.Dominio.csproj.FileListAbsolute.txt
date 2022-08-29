@@ -1,0 +1,5 @@
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.csproj.AssemblyReference.cache
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.AssemblyInfoInputs.cache
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.AssemblyInfo.cs
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.csproj.CoreCompileInputs.cache
