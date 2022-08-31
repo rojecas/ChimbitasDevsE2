@@ -3,3 +3,15 @@ D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Deb
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.AssemblyInfoInputs.cache
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.AssemblyInfo.cs
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\bin\Debug\net6.0\HogarGestor.App.Persistencia.deps.json
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\bin\Debug\net6.0\HogarGestor.App.Persistencia.runtimeconfig.json
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\bin\Debug\net6.0\HogarGestor.App.Persistencia.dll
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\bin\Debug\net6.0\HogarGestor.App.Persistencia.pdb
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\bin\Debug\net6.0\HogarGestor.app.Dominio.dll
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\bin\Debug\net6.0\HogarGestor.app.Dominio.pdb
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.csproj.CopyComplete
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.dll
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\refint\HogarGestor.App.Persistencia.dll
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.pdb
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\HogarGestor.App.Persistencia.genruntimeconfig.cache
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Persistencia\obj\Debug\net6.0\ref\HogarGestor.App.Persistencia.dll

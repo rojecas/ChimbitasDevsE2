@@ -1,23 +1,16 @@
-using System.IO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HogarGestor.app.Dominio
+namespace HogarGestor.App.Dominio
 {
     public class Cls_Beneficiario:Cls_Persona
     {
-        public int id {get;set;}
-        public float Latitud {get;set;}
-        public float Longitud {get;set;}
-        public string Ciudad {get; set;}
-        public DateOnly FechaNacimiento {get;set;}
+        public float latitud {get; set;}
+        public float longitud {get; set;}
+        public string ciudad {get; set;}
+        public DateTime fechaNacimiento {get; set;}
         public Cls_Familiar familiar {get; set;}
-        public Cls_PersonalSalud medico {get;set;}
-        public Cls_PersonalSalud nutricionista {get;set;}
-        public Cls_Historia historiaClinica {get;set;}
-        public System.Collections.Generic.List<Cls_PatronCrecimiento> patronCrecimiento {get;set;}
+        public Cls_PersonalSalud pediatra {get; set;}
+        public Cls_PersonalSalud nutricionista {get; set;}
+        public Cls_Historia historiaClinica {get; set;}
+        public System.Collections.Generic.List<Cls_PatronCrecimiento> patronCrecimiento {get; set;}
 
     }
 }

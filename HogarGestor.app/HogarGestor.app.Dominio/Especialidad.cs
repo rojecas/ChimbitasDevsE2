@@ -1,4 +1,4 @@
-namespace HogarGestor.app.Dominio
+namespace HogarGestor.App.Dominio
 {
     public enum Especialidad
     {

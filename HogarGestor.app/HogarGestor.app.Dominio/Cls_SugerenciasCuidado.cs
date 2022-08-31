@@ -1,14 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HogarGestor.app.Dominio
+namespace HogarGestor.App.Dominio
 {
-    public class Cls_SugerenciasCuidado:Cls_Historia
+    public class Cls_SugerenciasCuidado
     {
-       public new int Id {get; set;} 
-       public DateOnly FechaHora {get; set;}
+       public int Id {get; set;} 
+       public DateTime FechaHora {get; set;}
        public String Descripcion {get; set;}
     }
 }

@@ -1,15 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HogarGestor.app.Dominio
+namespace HogarGestor.App.Dominio
 {
     public class Cls_PatronCrecimiento
     {
         public int Id {get; set;}
-        public DateTime FechaHora {get;set;}
-        public float Valor {get;set;}
-        public TipoPatronC TipoPatronC {get; set;}
+        public DateTime fechaHora {get; set;}
+        public float valor {get; set;}
+        public TipoPatronC tipoPatronC {get; set;}
     }
 }

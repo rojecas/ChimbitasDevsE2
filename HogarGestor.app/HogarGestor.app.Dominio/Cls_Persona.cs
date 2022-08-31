@@ -1,16 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HogarGestor.app.Dominio
+namespace HogarGestor.App.Dominio
 {
     public class Cls_Persona
-    {// primary key??
+    {
        public int Id {get; set;} 
-       public string Nombre{get; set;}
-       public string Apellido {get; set;}
+       public string nombre{get; set;}
+       public string apellido {get; set;}
        public string documento {get; set;}
-       public Genero Genero {get;  set;}
+       public Genero genero {get;  set;}
     }
 }

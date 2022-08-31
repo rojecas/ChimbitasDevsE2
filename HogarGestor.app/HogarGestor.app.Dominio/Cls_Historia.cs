@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace HogarGestor.app.Dominio
+namespace HogarGestor.App.Dominio
 {
-    public class Cls_Historia:Cls_Beneficiario
+    public class Cls_Historia
     {
-       public new int Id {get; set;} 
+       public int Id {get; set;} 
+       public System.Collections.Generic.List<Cls_SugerenciasCuidado> sugerencias {get; set;}
     }
 }
