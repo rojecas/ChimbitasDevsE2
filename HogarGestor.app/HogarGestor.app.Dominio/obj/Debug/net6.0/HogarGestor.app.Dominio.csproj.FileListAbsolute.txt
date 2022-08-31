@@ -1,11 +1,11 @@
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.app.Dominio.deps.json
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.app.Dominio.dll
+D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.app.Dominio.pdb
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.csproj.AssemblyReference.cache
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.GeneratedMSBuildEditorConfig.editorconfig
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.AssemblyInfoInputs.cache
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.AssemblyInfo.cs
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.csproj.CoreCompileInputs.cache
-D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.app.Dominio.deps.json
-D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.app.Dominio.dll
-D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.app.Dominio.pdb
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.dll
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\refint\HogarGestor.app.Dominio.dll
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.pdb
