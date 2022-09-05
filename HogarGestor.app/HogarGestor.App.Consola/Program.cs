@@ -29,6 +29,45 @@ namespace HogarGestor.App.Consola
             };
             _repoBeneficiario.AddBeneficiario(beneficiario);
         }
+        private static void AddBeneficiario()
+        {
+            var beneficiario = new Cls_Beneficiario{
+                nombre = "sebastian",
+                apellido = "Restrepo",
+                documento = "19'333.963",
+                latitud = 4.69590F,
+                longitud = -74.19699F,
+                ciudad = "Bogotá",
+                fechaNacimiento = new DateTime (2019,09,23),
+            };
+            _repoBeneficiario.AddBeneficiario(beneficiario);
+        }
+        private static void AddBeneficiario()
+        {
+            var beneficiario = new Cls_Beneficiario{
+                nombre = "Daniela",
+                apellido = "Ariza",
+                documento = "23'000.163",
+                latitud = 4.59990F,
+                longitud = -99.12399F,
+                ciudad = "Bogotá",
+                fechaNacimiento = new DateTime (2012,01,19),
+            };
+            _repoBeneficiario.AddBeneficiario(beneficiario);
+        }    
+        private static void AddBeneficiario()
+        {
+            var beneficiario = new Cls_Beneficiario{
+                nombre = "Hugo",
+                apellido = "Perez",
+                documento = "43'343.663",
+                latitud = 2.59590F,
+                longitud = -54.00000F,
+                ciudad = "Santander",
+                fechaNacimiento = new DateTime (2012,02,11),
+            };
+            _repoBeneficiario.AddBeneficiario(beneficiario);
+        }
          private static void AddNutricionista()
         {
             var newNutricionista = new Cls_PersonalSalud{
