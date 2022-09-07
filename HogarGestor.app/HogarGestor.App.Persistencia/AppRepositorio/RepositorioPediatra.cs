@@ -11,7 +11,7 @@ namespace HogarGestor.App.Persistencia
         {
             _appContext = appContext;
         }
-        HogarGestor.App.Dominio.Cls_PersonalSalud IRepositorioPediatra.AddN(HogarGestor.App.Dominio.Cls_PersonalSalud pediatra)
+        HogarGestor.App.Dominio.Cls_PersonalSalud IRepositorioPediatra.AddPediatra(HogarGestor.App.Dominio.Cls_PersonalSalud pediatra)
         {
             var pediatraAdicionado = _appContext.pediatra.Add(pediatra);
             _appContext.SaveChanges();
