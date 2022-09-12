@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Security.Cryptography.X509Certificates;
+
 using System.Collections.Generic;
 using HogarGestor.App.Dominio;
-namespace  HogarGestor.App.Persistencia
+namespace HogarGestor.App.Persistencia;
+
+public interface IRepositorioBeneficiarioMemoria // No es una clase, es una interfaz
 {
-    public interface  IRepositorioBeneficiarioMemoria
-    {
-       IEnumerable<Beneficiario> GetAll();
+    IEnumerable<Cls_Beneficiario> GetAll();
 
-       Beneficiario Add(Beneficiario beneficiario);
+    Cls_Beneficiario Add(Cls_Beneficiario beneficiario);
 
-       Beneficiario Update(Beneficiario beneficiario);
+    Cls_Beneficiario Update(Cls_Beneficiario beneficiario);
 
-       void Delete(int idBeneficiario);
+    void Delete(int idBeneficiario);
 
-       Beneficiario Get(int idBeneficiario);
-    } 
+    Cls_Beneficiario Get(int idBeneficiario);
 }
