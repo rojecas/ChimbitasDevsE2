@@ -37,7 +37,9 @@ namespace HogarGestor.App.Persistencia
                 nutricionistaEncontrado.nombre = nutricionista.nombre;
                 nutricionistaEncontrado.apellido = nutricionista.apellido;
                 nutricionistaEncontrado.documento = nutricionista.documento;
+                nutricionistaEncontrado.telefono = nutricionista.telefono;
                 nutricionistaEncontrado.genero = nutricionista.genero;
+                nutricionistaEncontrado.regRethus = nutricionista.regRethus;
                 _appContext.SaveChanges();
            }
            return nutricionistaEncontrado;

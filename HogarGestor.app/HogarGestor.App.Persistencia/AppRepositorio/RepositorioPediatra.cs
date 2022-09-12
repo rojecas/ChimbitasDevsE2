@@ -37,7 +37,9 @@ namespace HogarGestor.App.Persistencia
                 pediatraEncontrado.nombre = pediatra.nombre;
                 pediatraEncontrado.apellido = pediatra.apellido;
                 pediatraEncontrado.documento = pediatra.documento;
+                pediatraEncontrado.telefono = pediatra.telefono;
                 pediatraEncontrado.genero = pediatra.genero;
+                pediatraEncontrado.regRethus = pediatra.regRethus;
                 _appContext.SaveChanges();
            }
            return pediatraEncontrado;

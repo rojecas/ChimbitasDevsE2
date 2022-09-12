@@ -10,5 +10,7 @@ namespace HogarGestor.App.Persistencia
         Cls_Beneficiario UpdateBeneficiario(Cls_Beneficiario beneficiario);
         void DeleteBeneficiario(int IdBeneficiario);
         Cls_Beneficiario GetBeneficiario(int IdBeneficiario);
+        Cls_Historia AsignarHistoriaC(int IdBeneficiario, int IdHistoria);
+
     }
 }

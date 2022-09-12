@@ -1,20 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace HogarGestor.App.Persistencia//.AppRepositorio
-{
-    
+namespace HogarGestor.App.Persistencia
+{ 
     using HogarGestor.App.Dominio;
-//    using HogarGestor.App.Persistencia;
+
     public class AppContext : DbContext
     {
-        public DbSet<Cls_Persona> personas {get; set;}
-        public DbSet<Cls_Familiar> familiar {get; set;}
-        public DbSet<Cls_PersonalSalud> pediatra {get; set;}
-        public DbSet<Cls_PersonalSalud> nutricionista {get; set;}
-        public DbSet<Cls_PatronCrecimiento> patronCrecimiento {get; set;}
-        public DbSet<Cls_SugerenciasCuidado> sugerencia {get; set;}
-        public DbSet<Cls_Historia> historia {get; set;}
-        public DbSet<Cls_Beneficiario> beneficiario {get; set;}
+        public DbSet<Cls_Persona> ? personas {get; set;}
+        public DbSet<Cls_Familiar> ? familiar {get; set;}
+        public DbSet<Cls_PersonalSalud> ? pediatra {get; set;}
+        public DbSet<Cls_PersonalSalud> ? nutricionista {get; set;}
+        public DbSet<Cls_PatronCrecimiento> ? patronCrecimiento {get; set;}
+        public DbSet<Cls_SugerenciasCuidado> ? sugerencia {get; set;}
+        public DbSet<Cls_Historia> ? historia {get; set;}
+        public DbSet<Cls_Beneficiario> ? beneficiarios {get; set;}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if(!optionsBuilder.IsConfigured)
