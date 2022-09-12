@@ -6,14 +6,14 @@ using HogarGestor.App.Dominio;
 namespace HogarGestor.App.Persistencia;
 public interface IRepositorioNutricionistaMemoria // No es una clase, es una interfaz
 {
-    IEnumerable<Cls_Nutricionista> GetAll();
+    IEnumerable<Cls_PersonalSalud> GetAll();
 
-    Cls_Nutricionita Add(Cls_Nutricionista nutricionista);
+    Cls_PersonalSalud Add(Cls_PersonalSalud nutricionista);
 
-    Cls_Nutricionita Update(Cls_Nutricionita nutricionista);
+   Cls_PersonalSalud Update(Cls_PersonalSalud nutricionista);
 
-    void Delete(int idnutricionista);
+    void Delete(int idNutricionista);
 
-    Cls_Nutricionita Get(int idnutricionista);
-    IEnumerable<Cls_Nutricionita>GetFilter(string filtro);
+    Cls_PersonalSalud Get(int idNutricionista);
+    IEnumerable<Cls_PersonalSalud>GetFilter(string filtro);
 }
