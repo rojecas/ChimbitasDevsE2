@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Security.Cryptography.X509Certificates;
-
 using System.Collections.Generic;
 using HogarGestor.App.Dominio;
-namespace HogarGestor.App.Persistencia;
 
+namespace HogarGestor.App.Persistencia;
 public interface IRepositorioBeneficiarioMemoria // No es una clase, es una interfaz
 {
     IEnumerable<Cls_Beneficiario> GetAll();
@@ -16,4 +15,5 @@ public interface IRepositorioBeneficiarioMemoria // No es una clase, es una inte
     void Delete(int idBeneficiario);
 
     Cls_Beneficiario Get(int idBeneficiario);
+    IEnumerable<Cls_Beneficiario>GetFilter(string filtro);
 }

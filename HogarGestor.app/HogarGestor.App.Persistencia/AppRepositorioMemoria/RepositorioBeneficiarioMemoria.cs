@@ -13,6 +13,7 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
     {
         beneficiarios = new List<Cls_Beneficiario>(){
                 new Cls_Beneficiario{
+                    Id=1,
                     nombre = "Nicola",
                     apellido = "Tesla",
                     documento = "14'255.963",
@@ -25,29 +26,35 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
                     fechaNacimiento = new DateTime (1856,07,10),
                 },
                  new Cls_Beneficiario{
-                    nombre = "Homero",
+                    Id=2,
+                    nombre = "Bart",
                     apellido = "Simpson",
-                    documento = "21'876.098",
+                    documento = "1'123.276.098",
                     genero=0,
                     telefono= "3150891154",
                     direccion= "Cra 1 No.34-74",
                     latitud = 4.595321F,
                     longitud = -74.072223F,
-                    ciudad = "Cali",
-                    fechaNacimiento = new DateTime (1972,08,11),
+                    ciudad = "Springfield",
+                    fechaNacimiento = new DateTime (2003,07,11),
                 }
 
             };
     }
-    public IEnumerable<Cls_Beneficiario> GetAll()
+    public IEnumerable<Cls_Beneficiario> GetAll() // Done!
     {
-        throw new NotImplementedException();
+        return beneficiarios;
     }
-    public Cls_Beneficiario Add(Cls_Beneficiario beneficiario)
+    public Cls_Beneficiario Add(Cls_Beneficiario beneficiario)  // Done!
     {
-        throw new NotImplementedException();
+        beneficiario.Id = beneficiarios.Max(b => b.Id) + 1;
+        beneficiarios.Add(beneficiario);
+        return beneficiario;
     }
-
+    public Cls_Beneficiario Get(int idBeneficiario) 
+    {// Recupera de la lista de beneficiarios, aquel para el cual el Id sea igual al solicitado
+        return beneficiarios.SingleOrDefault(b=>b.Id == idBeneficiario);
+    }
     public Cls_Beneficiario Update(Cls_Beneficiario beneficiario)
     {
         throw new NotImplementedException();
@@ -58,8 +65,17 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
         throw new NotImplementedException();
     }
 
-    public Cls_Beneficiario Get(int idBeneficiario)
+
+    public IEnumerable<Cls_Beneficiario> GetFilter(string filtro = null)  // Done!
     {
-        throw new NotImplementedException();
+        var beneficiarios = GetAll();
+        if (beneficiarios != null)
+        {
+            if (!String.IsNullOrEmpty(filtro))
+            {
+                beneficiarios = beneficiarios.Where(b => b.nombre.Contains(filtro));
+            }
+        }
+        return beneficiarios;
     }
 }

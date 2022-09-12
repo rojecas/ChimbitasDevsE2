@@ -1,0 +1,52 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_Beneficiarios.IndexModel
+@{
+}
+<form method="get">
+    <div class="form-group">
+        <p>
+            Beneficiario: <input type="text" name="GetFilters" asp-for="GetFilters"/>
+            <input type="submit" value="Filter"/>
+        </p>
+    </div>
+</form>
+<h1>Lista de Beneficiarios del Hogar Gestor</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Fecha de Nacimiento</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Latitud</th>
+            <th scope="col">Longitud</th>
+            <th scope="col">Quick Actions  <a asp-page="./Create" ><span class="material-icons">add</span></a></th>
+        </tr>
+    </thead>
+    @foreach (var beneficiario in Model.beneficiarios)
+    {
+        <tbody>
+            <tr>
+                <td> @beneficiario.nombre </td>
+                <td> @beneficiario.apellido </td>
+                <td> @beneficiario.documento </td>
+                <td> @beneficiario.telefono </td>
+                <td> @beneficiario.genero </td>
+                <td> @beneficiario.fechaNacimiento </td>
+                <td> @beneficiario.direccion </td>
+                <td> @beneficiario.ciudad </td>
+                <td> @beneficiario.latitud </td>
+                <td> @beneficiario.longitud </td>
+                <td>
+                    <a asp-page="./Delete" asp-route-id=@beneficiario.Id><span class="material-icons">delete</span></a>
+                    <a asp-page="./Details" asp-route-id=@beneficiario.Id><span class="material-icons">info</span></a>
+                    <a asp-page="./Edit" asp-route-id=@beneficiario.Id><span class="material-icons">edit</span></a>
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>
