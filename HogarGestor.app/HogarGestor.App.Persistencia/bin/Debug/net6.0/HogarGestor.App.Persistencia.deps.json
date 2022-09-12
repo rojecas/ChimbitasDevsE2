@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "HogarGestor.App.Persistencia/1.0.0": {
         "dependencies": {
-          "HogarGestor.app.Dominio": "1.0.0",
+          "HogarGestor.App.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
@@ -485,9 +485,9 @@
           }
         }
       },
-      "HogarGestor.app.Dominio/1.0.0": {
+      "HogarGestor.App.Dominio/1.0.0": {
         "runtime": {
-          "HogarGestor.app.Dominio.dll": {}
+          "HogarGestor.App.Dominio.dll": {}
         }
       }
     }
@@ -799,7 +799,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "HogarGestor.app.Dominio/1.0.0": {
+    "HogarGestor.App.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

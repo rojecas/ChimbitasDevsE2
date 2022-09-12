@@ -10,3 +10,15 @@ D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\ne
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\refint\HogarGestor.app.Dominio.dll
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.app.Dominio.pdb
 D:\MySource\ChimbitasDevsE2\HogarGestor.App\HogarGestor.App.Dominio\obj\Debug\net6.0\ref\HogarGestor.app.Dominio.dll
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.App.Dominio.deps.json
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.App.Dominio.dll
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\bin\Debug\net6.0\HogarGestor.App.Dominio.pdb
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.App.Dominio.AssemblyInfo.cs
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.App.Dominio.dll
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\refint\HogarGestor.App.Dominio.dll
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\HogarGestor.App.Dominio.pdb
+C:\Users\6530b\OneDrive\Escritorio\PROGRAMACION\CICLO 3\ChimbitasDevsE2\HogarGestor.app\HogarGestor.App.Dominio\obj\Debug\net6.0\ref\HogarGestor.App.Dominio.dll

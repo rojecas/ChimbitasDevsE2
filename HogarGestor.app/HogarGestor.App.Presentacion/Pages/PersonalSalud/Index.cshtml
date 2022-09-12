@@ -1,0 +1,46 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_PersonalSalud.IndexModel
+@{
+}
+<form method="get">
+    <div class="form-group">
+        <p>
+            Nutricionista: <input type="text" name="GetFilters" asp-for="GetFilters"/>
+            <input type="submit" value="Filter"/>
+        </p>
+    </div>
+</form>
+<h1>Lista de Nutricionistas del Hogar Gestor</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Registro Rethus</th>
+            <th scope="col">Quick Actions  <a asp-page="./Create" ><span class="material-icons">add</span></a></th>
+        </tr>
+    </thead>
+    @foreach (var nutricionista in Model.nutricionistas)
+    {
+        <tbody>
+            <tr>
+                <td> @nutricionista.nombre </td>
+                <td> @nutricionista.apellido </td>
+                <td> @nutricionista.documento </td>
+                <td> @nutricionista.telefono </td>
+                <td> @nutricionista.genero </td>
+                <td> @nutricionista.especialidad </td>
+                <td> @nutricionista.regRethus </td>
+                <td>
+                    <a asp-page="./Delete" asp-route-id=@nutricionista.Id><span class="material-icons">delete</span></a>
+                    <a asp-page="./Details" asp-route-id=@nutricionista.Id><span class="material-icons">info</span></a>
+                    <a asp-page="./Edit" asp-route-id=@nutricionista.Id><span class="material-icons">edit</span></a>
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>
