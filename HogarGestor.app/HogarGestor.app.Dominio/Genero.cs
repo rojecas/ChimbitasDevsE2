@@ -5,6 +5,7 @@ namespace HogarGestor.App.Dominio
        Masculino,
        Femenino,
        Intersexual,
-       NoBinario 
+       NoBinario,
+       NoIngresado 
     }
 }
