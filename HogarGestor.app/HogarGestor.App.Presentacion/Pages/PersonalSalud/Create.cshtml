@@ -2,3 +2,37 @@
 @model HogarGestor.App.Presentacion.Pages_PersonalSalud.CreateModel
 @{
 }
+<form method="post">
+    <div class="form-group">
+        <label>Nombres</label>
+        <input asp-for="nutricionista.nombre" placeholder="Digite el nombre del nutricionista "class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Apellidos</label>
+        <input asp-for="nutricionista.apellido" placeholder="Digite el(los) apellido(s)del nutricionista "class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Genero</label>
+        <select asp-for="nutricionista.genero" class="form-control">
+            <option selected>Genero ...</option>
+            <option value=0>Masculino</option>
+            <option value=1>Femenino</option>
+            <option value=2>Intersexual</option>
+            <option value=3>No Binario</option>
+            <option value=4>No ingresado</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Documento</label>
+        <input asp-for="nutricionista.documento" placeholder="Digite el documento del nutricionista "class="form-control"/>
+    </div>
+        <div class="form-group">
+        <label>Telefono</label>
+        <input asp-for="nutricionista.telefono" placeholder="Digite el teléfono del nutricionista"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Registro Rethus</label>
+        <input asp-for="nutricionista.regRethus" placeholder="Digite el Cosigo Rethus del nutricionista"class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary" asp-page-handler="Save">Crear Nutricionista</button>
+</form>
