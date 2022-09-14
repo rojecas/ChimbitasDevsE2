@@ -45,7 +45,7 @@ public class RepositorioPediatraMemoria : IRepositorioPediatraMemoria
         return pediatra;
     }
     public Cls_PersonalSalud Get(int idPediatra) 
-    {// Recupera de la lista de pediatrass, aquel para el cual el Id sea igual al solicitado
+    {// Recupera de la lista de pediatrass, aquel para el cual el Id sea igual al solicitado ...
         return pediatras.SingleOrDefault(b=>b.Id == idPediatra);
     }
     public Cls_PersonalSalud Update(Cls_PersonalSalud pediatra)
