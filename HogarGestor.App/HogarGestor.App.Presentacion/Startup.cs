@@ -28,7 +28,7 @@ namespace HospiEnCasa.App.Presentacion
             services.AddSingleton<IRepositorioBeneficiarioMemoria,RepositorioBeneficiarioMemoria>();
             services.AddSingleton<IRepositorioFamiliarMemoria,RepositorioFamiliarMemoria>();
             //services.AddSingleton<IRepositorioPediatraMemoria,RepositorioPediatraMemoria>();
-            services.AddSingleton<IRepositorioNutricionistaMemoria,RepositorioNutricionistaMemoria>();
+            services.AddSingleton<IRepositorioPerSaludMemoria,RepositorioPerSaludMemoria>();
             services.AddRazorPages();
         }
 
@@ -39,7 +39,7 @@ namespace HospiEnCasa.App.Presentacion
             {
                 app.UseDeveloperExceptionPage();
             }
-            else    
+            else
             {
                 app.UseExceptionHandler("/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.

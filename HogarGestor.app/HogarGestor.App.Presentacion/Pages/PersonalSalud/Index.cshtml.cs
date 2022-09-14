@@ -10,17 +10,16 @@ namespace HogarGestor.App.Presentacion.Pages_PersonalSalud;
 
 public class IndexModel : PageModel
 {
-    private readonly IRepositorioNutricionistaMemoria repositorioNutricionistaMemoria;
-    public IEnumerable<Cls_PersonalSalud> nutricionistas { get; set; }
+    private readonly IRepositorioPerSaludMemoria repositorioPerSaludMemoria;
+    public IEnumerable<Cls_PersonalSalud> personasSalud { get; set; }
     [BindProperty(SupportsGet = true)]
     public string GetFilters { get; set; }
-    public IndexModel(IRepositorioNutricionistaMemoria repositorioNutricionistaMemoria)
+    public IndexModel(IRepositorioPerSaludMemoria repositorioPerSaludMemoria)
     {
-        this.repositorioNutricionistaMemoria = repositorioNutricionistaMemoria;
+        this.repositorioPerSaludMemoria = repositorioPerSaludMemoria;
     }
     public void OnGet(string GetFilters)
     {
-        
-        nutricionistas = repositorioNutricionistaMemoria.GetFilter(GetFilters);
+        personasSalud = repositorioPerSaludMemoria.GetFilter(GetFilters);
     }
 }

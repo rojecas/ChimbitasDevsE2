@@ -10,17 +10,17 @@ namespace HogarGestor.App.Presentacion.Pages_PersonalSalud;
 
 public class DetailsModel : PageModel
 {
-    private readonly IRepositorioNutricionistaMemoria repositorioNutricionistaMemoria; // atributo de Clase
+    private readonly IRepositorioPerSaludMemoria repositorioPerSaludMemoria; // atributo de Clase
 
- public Cls_PersonalSalud nutricionista { get; set; }
-    public DetailsModel(IRepositorioNutricionistaMemoria repositorioNutricionistaMemoria) // Metodo constructor de la clase Details (modelo)
+ public Cls_PersonalSalud perSalud { get; set; }
+    public DetailsModel(IRepositorioPerSaludMemoria repositorioPerSaludMemoria) // Metodo constructor de la clase Details (modelo)
     {
-        this.repositorioNutricionistaMemoria = repositorioNutricionistaMemoria;
+        this.repositorioPerSaludMemoria = repositorioPerSaludMemoria;
     }
     public IActionResult OnGet(int Id)
     {
-        nutricionista=repositorioNutricionistaMemoria.Get(Id);
-            if(nutricionista==null)
+        perSalud=repositorioPerSaludMemoria.Get(Id);
+            if(perSalud==null)
             {
                 return RedirectToPage("./NotFound");
             }

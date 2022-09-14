@@ -5,12 +5,12 @@
 <form method="get">
     <div class="form-group">
         <p>
-            Nutricionista: <input type="text" name="GetFilters" asp-for="GetFilters"/>
+            PerSalud: <input type="text" name="GetFilters" asp-for="GetFilters"/>
             <input type="submit" value="Filter"/>
         </p>
     </div>
 </form>
-<h1>Lista de Nutricionistas del Hogar Gestor</h1>
+<h1>Lista del Personal de Salud Adscritos al Hogar Gestor</h1>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -24,21 +24,21 @@
             <th scope="col">Quick Actions  <a asp-page="./Create" ><span class="material-icons">add</span></a></th>
         </tr>
     </thead>
-    @foreach (var nutricionista in Model.nutricionistas)
+    @foreach (var perSalud in Model.personasSalud)
     {
         <tbody>
             <tr>
-                <td> @nutricionista.nombre </td>
-                <td> @nutricionista.apellido </td>
-                <td> @nutricionista.documento </td>
-                <td> @nutricionista.telefono </td>
-                <td> @nutricionista.genero </td>
-                <td> @nutricionista.especialidad </td>
-                <td> @nutricionista.regRethus </td>
+                <td> @perSalud.nombre </td>
+                <td> @perSalud.apellido </td>
+                <td> @perSalud.documento </td>
+                <td> @perSalud.telefono </td>
+                <td> @perSalud.genero </td>
+                <td> @perSalud.especialidad </td>
+                <td> @perSalud.regRethus </td>
                 <td>
-                    <a asp-page="./Delete" asp-route-id=@nutricionista.Id><span class="material-icons">delete</span></a>
-                    <a asp-page="./Details" asp-route-id=@nutricionista.Id><span class="material-icons">info</span></a>
-                    <a asp-page="./Edit" asp-route-id=@nutricionista.Id><span class="material-icons">edit</span></a>
+                    <a asp-page="./Delete" asp-route-id=@perSalud.Id><span class="material-icons">delete</span></a>
+                    <a asp-page="./Details" asp-route-id=@perSalud.Id><span class="material-icons">info</span></a>
+                    <a asp-page="./Edit" asp-route-id=@perSalud.Id><span class="material-icons">edit</span></a>
                 </td>
             </tr>
         </tbody>

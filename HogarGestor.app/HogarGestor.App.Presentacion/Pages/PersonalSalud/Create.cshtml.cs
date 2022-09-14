@@ -10,12 +10,12 @@ namespace HogarGestor.App.Presentacion.Pages_PersonalSalud;
 
 public class CreateModel : PageModel
 {
-    private readonly IRepositorioNutricionistaMemoria repositorioNutricionistaMemoria; // atributo de Clase
+    private readonly IRepositorioPerSaludMemoria repositorioPerSaludMemoria; // atributo de Clase
     [BindProperty]
-    public Cls_PersonalSalud nutricionista { get; set; }
-    public CreateModel(IRepositorioNutricionistaMemoria repositorioNutricionistaMemoria) // Metodo constructor de la clase Create (modelo)
+    public Cls_PersonalSalud perSalud { get; set; }
+    public CreateModel(IRepositorioPerSaludMemoria repositorioPerSaludMemoria) // Metodo constructor de la clase Create (modelo)
     {
-        this.repositorioNutricionistaMemoria = repositorioNutricionistaMemoria;
+        this.repositorioPerSaludMemoria = repositorioPerSaludMemoria;
     }
     public void OnGet()
     {
@@ -23,7 +23,7 @@ public class CreateModel : PageModel
     }
     public IActionResult OnPostSave()
     {
-        nutricionista = repositorioNutricionistaMemoria.Add(nutricionista);
+        perSalud = repositorioPerSaludMemoria.Add(perSalud);
         return RedirectToPage("Index");
     }
 }

@@ -1,21 +1,15 @@
-
 using System.Collections;
 using System.Security.Cryptography.X509Certificates;
 using System.Collections.Generic;
 using HogarGestor.App.Dominio;
 
 namespace HogarGestor.App.Persistencia;
-public interface IRepositorioPediatraMemoria // No es una clase, es una interfaz...
+public interface IRepositorioPerSaludMemoria // No es una clase, es una interfaz
 {
     IEnumerable<Cls_PersonalSalud> GetAll();
-
-    Cls_PersonalSalud Add(Cls_PersonalSalud pediatra);
-
-   Cls_PersonalSalud Update(Cls_PersonalSalud pediatra);
-
-    void Delete(int idPediatra);
-
-    Cls_PersonalSalud Get(int idPediatra);
+    Cls_PersonalSalud Add(Cls_PersonalSalud perSalud);
+   Cls_PersonalSalud Update(Cls_PersonalSalud perSalud);
+    void Delete(int idPerSalud);
+    Cls_PersonalSalud Get(int idPerSalud);
     IEnumerable<Cls_PersonalSalud>GetFilter(string filtro);
-} 
-    
+}
