@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4nPT21llDUcyrFSwfIzRZ1tk+mTuC0dOgHBM1oJw3AV0K+w8CBvMhoSW2nzLBt9xfZY4Lvv+0f2DLGksTArChg==",
+  "success": true,
+  "projectFilePath": "/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Dominio/HogarGestor.app.Dominio.csproj",
+  "expectedPackageFiles": [
+    "/home/sebastian/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

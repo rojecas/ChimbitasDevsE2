@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "H9X7Srzp8l6WOIuRS/1GocD01x6F0SMJ1Mj4xzgutodPDizHE7kjiLJfl3TlmfXs7803erzvqfTwf/yUOFVAKQ==",
+  "success": true,
+  "projectFilePath": "/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Persistencia/AppRepositorioMemoria/AppRepositorioMemoria.csproj",
+  "expectedPackageFiles": [
+    "/home/sebastian/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

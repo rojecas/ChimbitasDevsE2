@@ -1,0 +1,46 @@
+﻿@page
+@model HogarGestor.app.Presentacion.Pages_PersonalSalud.IndexModel
+@{
+}
+<form method="get">
+    <div class="form-group">
+        <p>
+            PerSalud: <input type="text" name="GetFilters" asp-for="GetFilters"/>
+            <input type="submit" value="Filter"/>
+        </p>
+    </div>
+</form>
+<h1>Lista del Personal de Salud Adscritos al Hogar Gestor</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Registro Rethus</th>
+            <th scope="col">Quick Actions  <a asp-page="./Create" ><span class="material-icons">add</span></a></th>
+        </tr>
+    </thead>
+    @foreach (var perSalud in Model.personasSalud)
+    {
+        <tbody>
+            <tr>
+                <td> @perSalud.nombre </td>
+                <td> @perSalud.apellido </td>
+                <td> @perSalud.documento </td>
+                <td> @perSalud.telefono </td>
+                <td> @perSalud.genero </td>
+                <td> @perSalud.especialidad </td>
+                <td> @perSalud.regRethus </td>
+                <td>
+                    <a asp-page="./Delete" asp-route-id=@perSalud.Id><span class="material-icons">delete</span></a>
+                    <a asp-page="./Details" asp-route-id=@perSalud.Id><span class="material-icons">info</span></a>
+                    <a asp-page="./Edit" asp-route-id=@perSalud.Id><span class="material-icons">edit</span></a>
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>

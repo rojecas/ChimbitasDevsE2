@@ -1,0 +1,17 @@
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.csproj.AssemblyReference.cache
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.GeneratedMSBuildEditorConfig.editorconfig
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.AssemblyInfoInputs.cache
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.AssemblyInfo.cs
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.csproj.CoreCompileInputs.cache
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/HogarGestor.app.Presentacion.deps.json
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/HogarGestor.app.Presentacion.dll
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/ref/HogarGestor.app.Presentacion.dll
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/HogarGestor.app.Presentacion.pdb
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/HogarGestor.app.Dominio.dll
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/HogarGestor.app.Persistencia.dll
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/HogarGestor.app.Dominio.pdb
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/bin/Debug/net6.0/HogarGestor.app.Persistencia.pdb
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.csproj.CopyComplete
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.dll
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/ref/HogarGestor.app.Presentacion.dll
+/home/sebastian/Documentos/GitHub/HogarGestor.app/HogarGestor.app.Presentacion/obj/Debug/net6.0/HogarGestor.app.Presentacion.pdb
