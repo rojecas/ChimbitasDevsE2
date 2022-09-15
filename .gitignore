@@ -1,1 +1,5 @@
 HogarGestor.App/
+HogarGestor*/bin
+HogarGestor*/obj
+*.csproj
+*.sln
