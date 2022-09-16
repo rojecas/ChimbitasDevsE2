@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using HogarGestor.App.Dominio;
 
 namespace HogarGestor.App.Persistencia;
-
 public class RepositorioFamiliarMemoria : IRepositorioFamiliarMemoria
 {
     List<Cls_Familiar> familiares;
@@ -13,21 +12,21 @@ public class RepositorioFamiliarMemoria : IRepositorioFamiliarMemoria
     {
         familiares = new List<Cls_Familiar>(){
                 new Cls_Familiar{
-                    Id=1,
+                    Id=3,
                     nombre = "Thomas",
                     apellido = "Edinson",
                     documento = "94'525.093",
-                    genero=0,
+                    genero=Genero.Masculino,
                     telefono= "3105893654",
                     email= "t.edinson@latinmail.com",
                     parentesco="Padre",
                 },
                  new Cls_Familiar{
-                    Id=2,
+                    Id=4,
                     nombre = "Homero",
                     apellido = "Simpson",
                     documento = "21'876.098",
-                    genero=0,
+                    genero=Genero.Masculino,
                     telefono= "3508912154",
                     email= "homersimpson@latinmail.com",
                     parentesco="Padre",

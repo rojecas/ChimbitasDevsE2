@@ -41,8 +41,16 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
 
             };
     }
-    public IEnumerable<Cls_Beneficiario> GetAll() // Done!
+        public IEnumerable<Cls_Beneficiario> GetFilter(string filtro = null)  // Done!
     {
+        var beneficiarios = GetAll();
+        if (beneficiarios != null)
+        {
+            if (!String.IsNullOrEmpty(filtro))
+            {
+                beneficiarios = beneficiarios.Where(b => b.nombre.Contains(filtro));
+            }
+        }
         return beneficiarios;
     }
     public Cls_Beneficiario Add(Cls_Beneficiario beneficiario)  // Done!
@@ -55,27 +63,55 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
     {// Recupera de la lista de beneficiarios, aquel para el cual el Id sea igual al solicitado
         return beneficiarios.SingleOrDefault(b=>b.Id == idBeneficiario);
     }
+    public IEnumerable<Cls_Beneficiario> GetAll() // Done!
+    {
+        return beneficiarios;
+    }
     public Cls_Beneficiario Update(Cls_Beneficiario beneficiario)
     {
-        throw new NotImplementedException();
+       var beneficiarioEncontrado = beneficiarios.SingleOrDefault(b => b.Id == beneficiario.Id); 
+       if (beneficiarioEncontrado != null)
+        {
+            beneficiarioEncontrado.nombre = beneficiario.nombre;
+            beneficiarioEncontrado.apellido = beneficiario.apellido;
+            beneficiarioEncontrado.documento = beneficiario.documento;
+            beneficiarioEncontrado.telefono = beneficiario.telefono;
+            beneficiarioEncontrado.genero = beneficiario.genero;
+            beneficiarioEncontrado.direccion = beneficiario.direccion;
+            beneficiarioEncontrado.latitud = beneficiario.latitud;
+            beneficiarioEncontrado.longitud = beneficiario.longitud;
+            beneficiarioEncontrado.ciudad = beneficiario.ciudad;
+            beneficiarioEncontrado.fechaNacimiento = beneficiario.fechaNacimiento;
+            beneficiarioEncontrado.familiar = beneficiario.familiar;
+            beneficiarioEncontrado.pediatra = beneficiario.pediatra;
+            beneficiarioEncontrado.nutricionista = beneficiario.nutricionista;
+            beneficiarioEncontrado.historiaClinica = beneficiario.historiaClinica; 
+        } 
+        return beneficiarioEncontrado;
     }
-
     public void Delete(int idBeneficiario)
     {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
+        var beneficiario = beneficiarios.SingleOrDefault(p => p.Id == idBeneficiario);
+        if (beneficiario == null)
+            return;
+        beneficiarios.Remove(beneficiario);
+        //_appContext.SaveChanges();
     }
-
-
-    public IEnumerable<Cls_Beneficiario> GetFilter(string filtro = null)  // Done!
+    public Cls_PersonalSalud /*IRepositorioBeneficiarioMemoria.*/toAssignPerSalud(int idBeneficiario, Cls_PersonalSalud perSalud)
     {
-        var beneficiarios = GetAll();
-        if (beneficiarios != null)
+       var beneficiarioEncontrado = beneficiarios.SingleOrDefault(p => p.Id == idBeneficiario);
+       if (beneficiarioEncontrado != null)
         {
-            if (!String.IsNullOrEmpty(filtro))
+            if(perSalud.genero == 0)
             {
-                beneficiarios = beneficiarios.Where(b => b.nombre.Contains(filtro));
+                beneficiarioEncontrado.nutricionista = perSalud;
+                return perSalud;
             }
+                beneficiarioEncontrado.pediatra = perSalud;
+                return perSalud;
+
         }
-        return beneficiarios;
+        return null;
     }
 }

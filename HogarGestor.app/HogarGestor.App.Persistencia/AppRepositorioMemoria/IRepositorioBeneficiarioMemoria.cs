@@ -7,13 +7,11 @@ namespace HogarGestor.App.Persistencia;
 public interface IRepositorioBeneficiarioMemoria // No es una clase, es una interfaz
 {
     IEnumerable<Cls_Beneficiario> GetAll();
-
     Cls_Beneficiario Add(Cls_Beneficiario beneficiario);
-
     Cls_Beneficiario Update(Cls_Beneficiario beneficiario);
-
     void Delete(int idBeneficiario);
-
     Cls_Beneficiario Get(int idBeneficiario);
     IEnumerable<Cls_Beneficiario>GetFilter(string filtro);
+    Cls_PersonalSalud toAssignPerSalud(int idBeneficiario, Cls_PersonalSalud perSalud);
+
 }

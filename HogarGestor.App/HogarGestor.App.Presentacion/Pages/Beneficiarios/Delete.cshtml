@@ -2,3 +2,34 @@
 @model HogarGestor.App.Presentacion.Pages_Beneficiarios.DeleteModel
 @{
 }
+<h1>Esta seguro de que desea eliminar el siguiente Beneficiario?</h1>
+<div>
+    <h4>Beneficiario</h4>
+    <dl class="row">
+        <dt class="col-sm-2">Nombres:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.nombre</dd>
+        <dt class="col-sm-2">Apellidos:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.apellido</dd>
+        <dt class="col-sm-2">Genero:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.genero</dd>
+        <dt class="col-sm-2">Documento:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.documento</dd>
+        <dt class="col-sm-2">Teléfono</dt>
+        <dd class="col-sm-10">@Model.beneficiario.telefono</dd>
+        <dt class="col-sm-2">Dirección:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.direccion</dd>
+        <dt class="col-sm-2">Latitud:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.latitud</dd>
+        <dt class="col-sm-2">Longitud:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.longitud</dd>
+        <dt class="col-sm-2">Ciudad</dt>
+        <dd class="col-sm-10">@Model.beneficiario.ciudad</dd>
+        <dt class="col-sm-2">Fecha de Nacimiento:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.fechaNacimiento</dd>
+    </dl>
+</div>
+<form method="post">
+    <input type="hidden" asp-for="beneficiario.Id"/>
+        <button type="submit" class="btn btn-primary" asp-page-handler="Delete">Eliminar Beneficiario</button>
+    <a asp-page="./Index">Back to list</a>
+</form>

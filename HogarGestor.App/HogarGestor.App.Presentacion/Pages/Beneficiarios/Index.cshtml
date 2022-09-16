@@ -24,7 +24,7 @@
             <th scope="col">Ciudad</th>
             <th scope="col">Latitud</th>
             <th scope="col">Longitud</th>
-            <th scope="col">Quick Actions  <a asp-page="./Create" ><span class="material-icons">add</span></a></th>
+            <th scope="col">Quick Actions</th>
         </tr>
     </thead>
     @foreach (var beneficiario in Model.beneficiarios)
@@ -42,9 +42,11 @@
                 <td> @beneficiario.latitud </td>
                 <td> @beneficiario.longitud </td>
                 <td>
+                    <a asp-page="./Create" ><span class="material-icons">add</span></a>
                     <a asp-page="./Delete" asp-route-id=@beneficiario.Id><span class="material-icons">delete</span></a>
                     <a asp-page="./Details" asp-route-id=@beneficiario.Id><span class="material-icons">info</span></a>
                     <a asp-page="./Edit" asp-route-id=@beneficiario.Id><span class="material-icons">edit</span></a>
+                    <a asp-page="./Edit" asp-route-id=@beneficiario.Id><span class="material-icons">medical_services</span></a>
                 </td>
             </tr>
         </tbody>
