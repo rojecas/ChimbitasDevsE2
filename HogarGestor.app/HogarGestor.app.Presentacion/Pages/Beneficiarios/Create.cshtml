@@ -1,0 +1,54 @@
+﻿@page
+@model HogarGestor.app.Presentacion.Pages_Beneficiarios.CreateModel
+@{
+}
+<form method="post">
+    <div class="form-group">
+        <label>Nombres</label>
+        <input asp-for="beneficiario.nombre" placeholder="Digite el(los) nombre(s) de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Apellidos</label>
+        <input asp-for="beneficiario.apellido" placeholder="Digite el(los) apellido(s) de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Genero</label>
+        <select asp-for="beneficiario.genero" class="form-control">
+            <option selected>Genero ...</option>
+            <option value=0>Masculino</option>
+            <option value=1>Femenino</option>
+            <option value=2>Intersexual</option>
+            <option value=3>No Binario</option>
+            <option value=4>No ingresado</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Documento</label>
+        <input asp-for="beneficiario.documento" placeholder="Digite el documento de  el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+        <div class="form-group">
+        <label>Telefono</label>
+        <input asp-for="beneficiario.telefono" placeholder="Digite el teléfono  de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+        <div class="form-group">
+        <label>Dirección</label>
+        <input asp-for="beneficiario.direccion" placeholder="Digite la dirección de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Latitud</label>
+        <input asp-for="beneficiario.latitud" placeholder="Digite la latitud de ubicación el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Longitud</label>
+        <input asp-for="beneficiario.longitud" placeholder="Digite la longitud de ubicación de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Ciudad</label>
+        <input asp-for="beneficiario.ciudad" placeholder="Digite la ciudad de ubicación de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Fecha de Nacimiento</label>
+        <input asp-for="beneficiario.fechaNacimiento" placeholder="Digite el   de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary" asp-page-handler="Save">Crear Beneficiario</button>
+</form>

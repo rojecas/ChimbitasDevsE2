@@ -1,0 +1,42 @@
+﻿@page
+@model HogarGestor.app.Presentacion.Pages_Familiares.CreateModel
+@{
+}
+<form method="post">
+    <div class="form-group">
+        <label>Nombres</label>
+        <input asp-for="familiar.nombre" placeholder="Digite el nombre del familiar de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Apellidos</label>
+        <input asp-for="familiar.apellido" placeholder="Digite el(los) apellido(s)del familiar de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Genero</label>
+        <select asp-for="familiar.genero" class="form-control">
+            <option selected>Genero ...</option>
+            <option value=0>Masculino</option>
+            <option value=1>Femenino</option>
+            <option value=2>Intersexual</option>
+            <option value=3>No Binario</option>
+            <option value=4>No ingresado</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Documento</label>
+        <input asp-for="familiar.documento" placeholder="Digite el documento del familar de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+        <div class="form-group">
+        <label>Telefono</label>
+        <input asp-for="familiar.telefono" placeholder="Digite el teléfono del familiar de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+        <div class="form-group">
+        <label>Parentesco</label>
+        <input asp-for="familiar.parentesco" placeholder="Digite el parentesco del familiar de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Correo Electrónico</label>
+        <input asp-for="familiar.email" placeholder="Digite el correo electrónico de el(la) Beneficiario(a)"class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary" asp-page-handler="Save">Crear Familiar</button>
+</form>
