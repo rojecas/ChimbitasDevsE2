@@ -2,7 +2,7 @@ using System.Collections;
 using System.Security.Cryptography.X509Certificates;
 using System.Collections.Generic;
 using HogarGestor.App.Dominio;
-
+//esta clase aplica para nutricinista y pediatra
 namespace HogarGestor.App.Persistencia;
 public interface IRepositorioPerSaludMemoria // No es una clase, es una interfaz
 {
