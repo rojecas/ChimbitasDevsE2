@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj": {}
+    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
+    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj",
+        "projectUniqueName": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj",
         "projectName": "HogarGestor.App.Dominio",
-        "projectPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\6530b\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\obj\\",
+        "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\ServTec\\.nuget\\packages\\",
+        "outputPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\6530b\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ServTec\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -57,17 +57,17 @@
         }
       }
     },
-    "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj": {
+    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj",
+        "projectUniqueName": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj",
         "projectName": "HogarGestor.App.Persistencia",
-        "projectPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\6530b\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Persistencia\\obj\\",
+        "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\ServTec\\.nuget\\packages\\",
+        "outputPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\6530b\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ServTec\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -79,8 +79,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj"
+              "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
+                "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj"
               }
             }
           }
@@ -136,17 +136,17 @@
         }
       }
     },
-    "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj": {
+    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj",
+        "projectUniqueName": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj",
         "projectName": "HogarGestor.App.Presentacion",
-        "projectPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj",
-        "packagesPath": "C:\\Users\\6530b\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Presentacion\\obj\\",
+        "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Presentacion\\HogarGestor.App.Presentacion.csproj",
+        "packagesPath": "C:\\Users\\ServTec\\.nuget\\packages\\",
+        "outputPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Presentacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\6530b\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ServTec\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -158,11 +158,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj"
+              "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
+                "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj"
               },
-              "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj": {
-                "projectPath": "C:\\Users\\6530b\\OneDrive\\Escritorio\\PROGRAMACION\\CICLO 3\\ChimbitasDevsE2\\HogarGestor.app\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj"
+              "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj": {
+                "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Persistencia\\HogarGestor.App.Persistencia.csproj"
               }
             }
           }
@@ -176,6 +176,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

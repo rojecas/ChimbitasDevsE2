@@ -771,21 +771,21 @@
           }
         }
       },
-      "HogarGestor.app.Dominio/1.0.0": {
+      "HogarGestor.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/HogarGestor.app.Dominio.dll": {}
+          "bin/placeholder/HogarGestor.App.Dominio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HogarGestor.app.Dominio.dll": {}
+          "bin/placeholder/HogarGestor.App.Dominio.dll": {}
         }
       },
       "HogarGestor.App.Persistencia/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "HogarGestor.app.Dominio": "1.0.0",
+          "HogarGestor.App.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
         },
@@ -1992,10 +1992,10 @@
         "version.txt"
       ]
     },
-    "HogarGestor.app.Dominio/1.0.0": {
+    "HogarGestor.App.Dominio/1.0.0": {
       "type": "project",
-      "path": "../HogarGestor.App.Dominio/HogarGestor.app.Dominio.csproj",
-      "msbuildProject": "../HogarGestor.App.Dominio/HogarGestor.app.Dominio.csproj"
+      "path": "../HogarGestor.App.Dominio/HogarGestor.App.Dominio.csproj",
+      "msbuildProject": "../HogarGestor.App.Dominio/HogarGestor.App.Dominio.csproj"
     },
     "HogarGestor.App.Persistencia/1.0.0": {
       "type": "project",

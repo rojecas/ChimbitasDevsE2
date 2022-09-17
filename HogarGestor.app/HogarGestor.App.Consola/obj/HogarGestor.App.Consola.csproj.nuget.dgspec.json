@@ -69,12 +69,12 @@
         }
       }
     },
-    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj": {
+    "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj",
-        "projectName": "HogarGestor.app.Dominio",
-        "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj",
+        "projectUniqueName": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj",
+        "projectName": "HogarGestor.App.Dominio",
+        "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\ServTec\\.nuget\\packages\\",
         "outputPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
@@ -144,8 +144,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj": {
-                "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.app.Dominio.csproj"
+              "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj": {
+                "projectPath": "D:\\MySource\\ChimbitasDevsE2\\HogarGestor.App\\HogarGestor.App.Dominio\\HogarGestor.App.Dominio.csproj"
               }
             }
           }
