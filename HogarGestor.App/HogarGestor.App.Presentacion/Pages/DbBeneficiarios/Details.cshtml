@@ -1,0 +1,35 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_DbBeneficiarios.DetailsModel
+@{
+}
+<h1>Información Detallada Sobre El(la) Beneficiario(a)</h1>
+<div>
+    <h4>Beneficiario</h4>
+    <dl class="row">
+        <dt class="col-sm-2">Nombres:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.nombre</dd>
+        <dt class="col-sm-2">Apellidos:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.apellido</dd>
+        <dt class="col-sm-2">Genero:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.genero</dd>
+        <dt class="col-sm-2">Documento:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.documento</dd>
+        <dt class="col-sm-2">Teléfono</dt>
+        <dd class="col-sm-10">@Model.beneficiario.telefono</dd>
+        <dt class="col-sm-2">Dirección:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.direccion</dd>
+        <dt class="col-sm-2">Latitud:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.latitud</dd>
+        <dt class="col-sm-2">Longitud:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.longitud</dd>
+        <dt class="col-sm-2">Ciudad</dt>
+        <dd class="col-sm-10">@Model.beneficiario.ciudad</dd>
+        <dt class="col-sm-2">Fecha de Nacimiento:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.fechaNacimiento</dd>
+        <dt class="col-sm-2">Pediatra:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.pediatra.nombre @Model.beneficiario.pediatra.apellido</dd>
+        <dt class="col-sm-2">Nutricionista:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.nutricionista.nombre @Model.beneficiario.nutricionista.apellido</dd>
+    </dl>
+</div>
+<a asp-page="./Index">Back to list</a>

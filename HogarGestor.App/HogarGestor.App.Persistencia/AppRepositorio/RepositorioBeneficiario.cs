@@ -29,7 +29,7 @@ public class RepositorioBeneficiario : IRepositorioBeneficiario
     {
         return _appContext.beneficiarios;
     }
-    Cls_Beneficiario IRepositorioBeneficiario.GetBeneficiario(int IdBeneficiario)
+    Cls_Beneficiario IRepositorioBeneficiario.Get(int IdBeneficiario)
     {
         return _appContext.beneficiarios.FirstOrDefault(p => p.Id == IdBeneficiario);
     }
