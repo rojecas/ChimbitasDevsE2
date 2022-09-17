@@ -1,0 +1,149 @@
+// Resumen de Configuracion de la solucion creada con  C# + SQL
+	// verificar que se tiene instalado dotnet 
+dotnet --version
+	// Chequea que tiene instalado los complementos necesarios para la creacion de la solución con C# y SQL
+dotnet new -l
+	// Creacion del "Archivo de la solución"
+dotnet new sln -o HogarGestor.App
+	// Cambiarse a la carpeta creada en el paso anterior
+cd HogarGestor.App
+	// Creacion de la Biblioteca de Clases servicios
+dotnet new webapi -o HogarGestor.App.Servicios
+
+	// Creacion de la Biblioteca de Clases Dominio 
+dotnet new classlib -o HogarGestor.App.Dominio
+	// Creacion de "Biblioteca de Clases"
+cd 	HogarGestor.App.Dominio
+mkdir Entidades
+cd Entidades
+	//Luego se da todo el proceso de creacion de los archivos de clases
+cd ..
+	
+dotnet new classlib -o HogarGestor.App.Persistencia
+	// Cambiarse a la carpeta creada en el paso anterior
+cd HogarGestor.App.Persistencia	
+	// agregar la referencia "..\HogarGestor.App.Dominio\" al proyecto.
+dotnet add reference ../HogarGestor.App.Dominio/
+
+	//Luego se da todo el proceso de creacion de las carpeta AppData Y AppRepositorio
+mkdir AppData
+mkdir AppRepositorio
+cd AppRepositorio
+	//Luego se da todo el proceso de creacion de archivo AppContext.cs
+
+	// Instalacion y actualización de herramientas Globales "dotnet Entity Framework"
+cd HogarGestor.App	
+dotnet tool install --global dotnet-ef
+dotnet tool update --global dotnet-ef
+
+// Instalacion y actualización de herramientas de cada Proyecto Persistencia
+dotnet add package Microsoft.EntityFrameworkCore --version 6.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.8
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.8
+
+dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet
+
+	// Instalacion y actualización de herramientas de cada Proyecto Consola
+	// ir a la carpeta requerida
+cd HogarGestor.App
+	// Crear el proyecto consola	
+dotnet new console -o HogarGestor.App.Consola
+	// Cambiarse a la carpeta creada en el paso anterior
+ cd .\HogarGestor.App.Consola\
+	// instalar el framework.design en el proyecto consola
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.8
+	// agregar la referencia "..\HogarGestor.App\HogarGestor.App.Persistencia" al proyecto.
+dotnet add reference ../HogarGestor.App.Persistencia/
+
+ cd ..
+ cd HogarGestor.App.Persistencia
+
+dotnet ef migrations add Entidades --startup-project ..\HogarGestor.App.Consola\
+
+dotnet ef migrations add Inicial --startup-project ..\HogarGestor.App.Consola\
+
+dotnet ef database update --startup-project ..\HogarGestor.App.Consola\
+
+dotnet ef migrations add ActClases --startup-project ..\HogarGestor.App.Consola\
+
+dotnet add package Microsoft.EntityFrameworkCore --version 6.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.8
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.8
+
+
+//Crear el nuevo proyecto Presentacion, tipo webapp
+dotnet new webapp -o HogarGestor.App.Presentacion
+//cambiarse a la carpeta del proyecto previamente creado
+cd HogarGestor.App.Presentacion
+// Crear Referencia a la capa de Dominio
+dotnet add reference ../HogarGestor.App.Dominio/
+// Crear Referencia a la capa de Persistencia
+dotnet add reference ../HogarGestor.App.Persistencia/
+
+// Generacion de un certificado temporal para desarrollo del sitio web local
+dotnet dev-certs https
+
+// Paginas de Beneficiarios Guardados en memoria
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
+// Creacion de pagina para 
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
+// Creacion de pagina para 
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
+// Creacion de pagina para 
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
+// Creacion de pagina para asignacion de personal medico
+dotnet new page -n AsigPerSalud -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
+
+
+// Paginas de Beneficiarios en Base de Datos
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
+// Creacion de pagina para 
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
+// Creacion de pagina para 
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
+// Creacion de pagina para 
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
+// Creacion de pagina para asignacion de personal medico
+dotnet new page -n AsigPerSalud -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
+
+
+
+
+
+https://fonts.google.com/icons?icon.set=Material+Icons
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+// Paginas de Familiares
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para creacion
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para ver detalles
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para borrar
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+
+// Paginas de Personal Salud
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para creacion
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para ver detalles
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para borrar
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+

@@ -41,7 +41,7 @@ public class RepositorioPerSaludMemoria : IRepositorioPerSaludMemoria
                     apellido = "Hubbert",
                     documento = "443'423.093",
                     genero=Genero.Masculino,
-                    especialidad=Especialidad.Pediatra,
+                    especialidad=Especialidad.Nutricionista,
                     regRethus="378278",
                     telefono= "3234567809",
                 },
@@ -62,15 +62,15 @@ public class RepositorioPerSaludMemoria : IRepositorioPerSaludMemoria
     {
         return personasSalud;
     }
+    public Cls_PersonalSalud Get(int idPerSalud)
+    {// Recupera de la lista de personasSalud, aquel para el cual el Id sea igual al solicitado
+        return personasSalud.SingleOrDefault(b => b.Id == idPerSalud);
+    }
     public Cls_PersonalSalud Add(Cls_PersonalSalud perSalud)  // Done!
     {
         perSalud.Id = personasSalud.Max(b => b.Id) + 1;
         personasSalud.Add(perSalud);
         return perSalud;
-    }
-    public Cls_PersonalSalud Get(int idPerSalud)
-    {// Recupera de la lista de personasSalud, aquel para el cual el Id sea igual al solicitado
-        return personasSalud.SingleOrDefault(b => b.Id == idPerSalud);
     }
     public Cls_PersonalSalud Update(Cls_PersonalSalud perSalud)
     {

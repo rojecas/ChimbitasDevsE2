@@ -1,6 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 using HogarGestor.App.Dominio;
 
 namespace HogarGestor.App.Persistencia;
@@ -19,7 +19,7 @@ public class RepositorioBeneficiario : IRepositorioBeneficiario
     }
     void IRepositorioBeneficiario.DeleteBeneficiario(int IdBeneficiario)
     {
-        var beneficiarioEncontrado = _appContext.beneficiarios.FirstOrDefault(p => p.Id == IdBeneficiario);
+        var beneficiarioEncontrado = _appContext.beneficiarios.FirstOrDefault(b => b.Id == IdBeneficiario);
         if (beneficiarioEncontrado == null)
             return;
         _appContext.beneficiarios.Remove(beneficiarioEncontrado);

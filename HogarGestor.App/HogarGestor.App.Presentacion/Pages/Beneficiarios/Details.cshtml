@@ -26,5 +26,10 @@
         <dd class="col-sm-10">@Model.beneficiario.ciudad</dd>
         <dt class="col-sm-2">Fecha de Nacimiento:</dt>
         <dd class="col-sm-10">@Model.beneficiario.fechaNacimiento</dd>
+        <dt class="col-sm-2">Pediatra:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.pediatra.nombre @Model.beneficiario.pediatra.apellido</dd>
+        <dt class="col-sm-2">Nutricionista:</dt>
+        <dd class="col-sm-10">@Model.beneficiario.nutricionista.nombre @Model.beneficiario.nutricionista.apellido</dd>
     </dl>
 </div>
+<a asp-page="./Index">Back to list</a>

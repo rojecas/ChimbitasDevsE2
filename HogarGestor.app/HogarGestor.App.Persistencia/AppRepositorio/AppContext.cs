@@ -14,6 +14,7 @@ namespace HogarGestor.App.Persistencia
         public DbSet<Cls_SugerenciasCuidado> ? sugerencia {get; set;}
         public DbSet<Cls_Historia> ? historia {get; set;}
         public DbSet<Cls_Beneficiario> ? beneficiarios {get; set;}
+        public AppContext (DbContextOptions<AppContext> options) : base(options){}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if(!optionsBuilder.IsConfigured)

@@ -1,3 +1,4 @@
+using System.Timers;
 using System;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -24,6 +25,8 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
                     longitud = -74.07699F,
                     ciudad = "Bogotá",
                     fechaNacimiento = new DateTime (1856,07,10),
+                    nutricionista = null,
+                    pediatra = null,
                 },
                  new Cls_Beneficiario{
                     Id=2,
@@ -37,11 +40,13 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
                     longitud = -74.072223F,
                     ciudad = "Springfield",
                     fechaNacimiento = new DateTime (2003,07,11),
+                    nutricionista = null,
+                    pediatra = null,
                 }
 
             };
     }
-        public IEnumerable<Cls_Beneficiario> GetFilter(string filtro = null)  // Done!
+    public IEnumerable<Cls_Beneficiario> GetFilter(string filtro = null)  // Done!
     {
         var beneficiarios = GetAll();
         if (beneficiarios != null)
@@ -59,9 +64,9 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
         beneficiarios.Add(beneficiario);
         return beneficiario;
     }
-    public Cls_Beneficiario Get(int idBeneficiario) 
+    public Cls_Beneficiario Get(int idBeneficiario)
     {// Recupera de la lista de beneficiarios, aquel para el cual el Id sea igual al solicitado
-        return beneficiarios.SingleOrDefault(b=>b.Id == idBeneficiario);
+        return beneficiarios.SingleOrDefault(b => b.Id == idBeneficiario);
     }
     public IEnumerable<Cls_Beneficiario> GetAll() // Done!
     {
@@ -69,8 +74,8 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
     }
     public Cls_Beneficiario Update(Cls_Beneficiario beneficiario)
     {
-       var beneficiarioEncontrado = beneficiarios.SingleOrDefault(b => b.Id == beneficiario.Id); 
-       if (beneficiarioEncontrado != null)
+        var beneficiarioEncontrado = beneficiarios.SingleOrDefault(b => b.Id == beneficiario.Id);
+        if (beneficiarioEncontrado != null)
         {
             beneficiarioEncontrado.nombre = beneficiario.nombre;
             beneficiarioEncontrado.apellido = beneficiario.apellido;
@@ -85,32 +90,30 @@ public class RepositorioBeneficiarioMemoria : IRepositorioBeneficiarioMemoria
             beneficiarioEncontrado.familiar = beneficiario.familiar;
             beneficiarioEncontrado.pediatra = beneficiario.pediatra;
             beneficiarioEncontrado.nutricionista = beneficiario.nutricionista;
-            beneficiarioEncontrado.historiaClinica = beneficiario.historiaClinica; 
-        } 
+            beneficiarioEncontrado.historiaClinica = beneficiario.historiaClinica;
+        }
         return beneficiarioEncontrado;
     }
     public void Delete(int idBeneficiario)
     {
-        //throw new NotImplementedException();
         var beneficiario = beneficiarios.SingleOrDefault(p => p.Id == idBeneficiario);
         if (beneficiario == null)
             return;
         beneficiarios.Remove(beneficiario);
         //_appContext.SaveChanges();
     }
-    public Cls_PersonalSalud /*IRepositorioBeneficiarioMemoria.*/toAssignPerSalud(int idBeneficiario, Cls_PersonalSalud perSalud)
+    public Cls_PersonalSalud toAssignPerSalud(int idBeneficiario, Cls_PersonalSalud perSalud)
     {
-       var beneficiarioEncontrado = beneficiarios.SingleOrDefault(p => p.Id == idBeneficiario);
-       if (beneficiarioEncontrado != null)
+        var beneficiarioEncontrado = beneficiarios.SingleOrDefault(p => p.Id == idBeneficiario);
+        if (beneficiarioEncontrado != null)
         {
-            if(perSalud.genero == 0)
-            {
+                if(perSalud.especialidad == Especialidad.Pediatra)
+                {
+                    beneficiarioEncontrado.pediatra = perSalud;
+                    return perSalud;
+                }
                 beneficiarioEncontrado.nutricionista = perSalud;
                 return perSalud;
-            }
-                beneficiarioEncontrado.pediatra = perSalud;
-                return perSalud;
-
         }
         return null;
     }
