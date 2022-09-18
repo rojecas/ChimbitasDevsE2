@@ -39,6 +39,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmVuZWZpY2lhcmlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/MySource/ChimbitasDevsE2/HogarGestor.App/HogarGestor.App.Presentacion/Pages/DbBeneficiarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGJCZW5lZmljaWFyaW9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/MySource/ChimbitasDevsE2/HogarGestor.App/HogarGestor.App.Presentacion/Pages/DbBeneficiarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGJCZW5lZmljaWFyaW9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

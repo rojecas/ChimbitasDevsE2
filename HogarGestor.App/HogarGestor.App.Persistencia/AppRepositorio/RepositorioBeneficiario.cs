@@ -11,13 +11,13 @@ public class RepositorioBeneficiario : IRepositorioBeneficiario
     {
         _appContext = appContext;
     }
-    HogarGestor.App.Dominio.Cls_Beneficiario IRepositorioBeneficiario.AddBeneficiario(HogarGestor.App.Dominio.Cls_Beneficiario beneficiario)
+    HogarGestor.App.Dominio.Cls_Beneficiario IRepositorioBeneficiario.Add(HogarGestor.App.Dominio.Cls_Beneficiario beneficiario)
     {
         var beneficiarioAdicionado = _appContext.beneficiarios.Add(beneficiario);
         _appContext.SaveChanges();
         return beneficiarioAdicionado.Entity;
     }
-    void IRepositorioBeneficiario.DeleteBeneficiario(int IdBeneficiario)
+    void IRepositorioBeneficiario.Delete(int IdBeneficiario)
     {
         var beneficiarioEncontrado = _appContext.beneficiarios.FirstOrDefault(b => b.Id == IdBeneficiario);
         if (beneficiarioEncontrado == null)
@@ -25,7 +25,7 @@ public class RepositorioBeneficiario : IRepositorioBeneficiario
         _appContext.beneficiarios.Remove(beneficiarioEncontrado);
         _appContext.SaveChanges();
     }
-    IEnumerable<Cls_Beneficiario> IRepositorioBeneficiario.GetAllBeneficiarios()
+    IEnumerable<Cls_Beneficiario> IRepositorioBeneficiario.GetAll()
     {
         return _appContext.beneficiarios;
     }
@@ -33,7 +33,7 @@ public class RepositorioBeneficiario : IRepositorioBeneficiario
     {
         return _appContext.beneficiarios.FirstOrDefault(p => p.Id == IdBeneficiario);
     }
-    Cls_Beneficiario IRepositorioBeneficiario.UpdateBeneficiario(Cls_Beneficiario beneficiario)
+    Cls_Beneficiario IRepositorioBeneficiario.Update(Cls_Beneficiario beneficiario)
     {
         var beneficiarioEncontrado = _appContext.beneficiarios.FirstOrDefault(b => b.Id == beneficiario.Id);
         if (beneficiarioEncontrado != null)
@@ -71,5 +71,4 @@ public class RepositorioBeneficiario : IRepositorioBeneficiario
         }
         return null;
     }
-
 }

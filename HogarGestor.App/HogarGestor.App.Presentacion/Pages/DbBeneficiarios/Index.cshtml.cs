@@ -24,7 +24,7 @@ public class IndexModel : PageModel
     {
         //beneficiarios=repositorioBeneficiarioMemoria.GetAll();
         //beneficiarios = repositorioBeneficiarioMemoria.GetFilter(GetFilters);
-        beneficiarios = repositorioBeneficiario.GetAllBeneficiarios(); //GetFilter(GetFilters);
+        beneficiarios = repositorioBeneficiario.GetAll(); //GetFilter(GetFilters);
     }
 }
 

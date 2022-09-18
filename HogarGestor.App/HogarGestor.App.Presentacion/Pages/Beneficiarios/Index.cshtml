@@ -27,9 +27,10 @@
             <th scope="col">Quick Actions: </th>
         </tr>
     </thead>
+    <tbody>
     @foreach (var beneficiario in Model.beneficiarios)
     {
-        <tbody>
+        
             <tr>
                 <td> @beneficiario.nombre </td>
                 <td> @beneficiario.apellido </td>
@@ -42,13 +43,27 @@
                 <td> @beneficiario.latitud </td>
                 <td> @beneficiario.longitud </td>
                 <td>
-                    <a asp-page="./Create" ><span class="material-icons">add</span></a>
                     <a asp-page="./Delete" asp-route-id=@beneficiario.Id><span class="material-icons">delete</span></a>
                     <a asp-page="./Details" asp-route-id=@beneficiario.Id><span class="material-icons">info</span></a>
                     <a asp-page="./Edit" asp-route-id=@beneficiario.Id><span class="material-icons">edit</span></a>
                     <a asp-page="./AsigPerSalud" asp-route-id=@beneficiario.Id><span class="material-icons">medical_services</span></a>
                 </td>
             </tr>
-        </tbody>
+        
     }
+    <tr>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>                
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td>
+                    <a asp-page="./Create" ><span class="material-icons">add</span></a>
+                </td>
+    </tbody>
 </table>
