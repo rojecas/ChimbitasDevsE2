@@ -30,6 +30,10 @@ public class Startup
         services.AddSingleton<IRepositorioPerSaludMemoria,RepositorioPerSaludMemoria>();
 
         services.AddScoped<IRepositorioBeneficiario, RepositorioBeneficiario>();
+        services.AddScoped<IRepositorioPersonalSalud, RepositorioPersonalSalud>();
+        services.AddScoped<IRepositorioFamiliar, RepositorioFamiliar>();
+        services.AddScoped<IRepositorioHistoriaC, RepositorioHistoriaC>();
+        services.AddScoped<IRepositorioPatronC, RepositorioPatronC>();
         services.AddDbContext<HogarGestor.App.Persistencia.AppContext>(options => options.UseSqlServer(Configuration.GetConnectionString("HGContext")));
         services.AddRazorPages();
     }

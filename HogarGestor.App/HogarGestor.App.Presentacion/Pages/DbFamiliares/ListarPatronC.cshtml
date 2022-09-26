@@ -1,0 +1,45 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_DbFamiliares.ListarPatronCModel
+@{
+}
+<body>
+    <h1>Lista de Patrones de Crecimiento</h1>
+    @* <form method="get" class="formulario">
+        <div class="form-group">
+            <p> Beneficiarios:<input type="text" placeholder="Nombre de el(la) Beneficiario" name="GetFilter"
+                    class="round" />
+                <input type="submit" value="Filter" class="round" />
+            </p>
+        </div>
+    </form> *@
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th scope="col">Fecha y Hora: </th>
+            <th scope="col">Tipo: </th>
+            <th scope="col">Valor: </th>
+            <th scope="col"> Quick Actions: </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var patron in Model.PatronesCrecimiento)
+    {
+        <tr>
+            <td>@patron.fechaHora</td>
+            <td>@patron.tipoPatronC</td>
+            <td>@patron.valor</td>
+            <td >
+                <a asp-Page="./Delete" asp-route-id="@patron.Id"><button ><span class="material-icons">delete</span></button></a>
+                <a asp-Page="./Edit" asp-route-id="@patron.Id"><button ><span class="material-icons">edit</span></button></a>
+                <a asp-Page="./Details" asp-route-id="@patron.Id"><button ><span class="material-icons" >info</span></button></a>
+            </td>
+        </tr>
+    }
+        <tr>
+            <td> ... </td>
+            <td> ... </td>
+            <td> ... </td>
+            <td><a asp-page="./AdicionPatronC"><span class="material-icons">person_add_alt</span></a></td>
+    </tbody>
+</table>
+</body>

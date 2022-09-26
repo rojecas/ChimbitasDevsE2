@@ -1,16 +1,15 @@
+using System.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using HogarGestor.App.Dominio;
 
-namespace HogarGestor.App.Persistencia
+namespace HogarGestor.App.Persistencia;
+public interface IRepositorioHistoriaC
 {
-    public interface IRepositorioHistoriaC
-    {
-        Cls_Historia AsignarHistoriaC(Cls_Historia historia);
-        Cls_Historia CrearHistoriaC(Cls_Historia historia);
-       /* Cls_Historia ActualizarHistoriaC(Cls_Historia historia);
-
-        Cls_Historia BorrarHistoriaC(int IdHistoria);
-
-        Cls_Historia LlamarHistoriaC(int IdHistoria); */
-    }
+    IEnumerable<Cls_Historia> GetAllHC();
+    Cls_Historia AddHC(Cls_Historia historia);
+    Cls_Historia CreateHC(Cls_Historia historia);
+    Cls_Historia UpdateHC(Cls_Historia historia);
+    void DeleteHC(int IdHistoria);
+    Cls_Historia GetHC(int IdHistoria);
 }

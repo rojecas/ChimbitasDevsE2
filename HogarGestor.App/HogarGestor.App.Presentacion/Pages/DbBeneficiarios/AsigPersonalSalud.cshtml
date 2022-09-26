@@ -1,0 +1,38 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_DbBeneficiarios.AsigPersonalSaludModel
+@{
+}
+<form method="post">
+    <input type="hidden" asp-for="beneficiario.Id"/>
+    <h1>Asignar Personal de la Salud</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Documento</th>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Ckeck your choose</th>
+            </tr>
+        </thead>
+        @foreach(var pediatra in Model.personasSalud)
+        {
+            <tbody>
+                <tr>
+                    <td>@pediatra.nombre</td>
+                    <td>@pediatra.apellido</td>
+                    <td>@pediatra.genero</td>
+                    <td>@pediatra.documento</td>
+                    <td>@pediatra.especialidad</td>
+                    <td>@pediatra.telefono</td>
+                    <td>
+                        <input type="checkbox" name="idPersonalSalud" value="@pediatra.Id"/>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+    <button type="submit" class="btn btn-primary" asp-page-handler="ToAssign">Asignar</button>
+</form>

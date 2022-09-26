@@ -20,6 +20,5 @@ public class IndexModel : PageModel
     }
     public void OnGet(string GetFilters)
     {
-        personasSalud = repositorioPerSaludMemoria.GetFilter(GetFilters);
     }
 }

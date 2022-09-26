@@ -60,12 +60,11 @@ dotnet add reference ../HogarGestor.App.Persistencia/
  cd HogarGestor.App.Persistencia
 
 dotnet ef migrations add Entidades --startup-project ..\HogarGestor.App.Consola\
-
 dotnet ef migrations add Inicial --startup-project ..\HogarGestor.App.Consola\
+dotnet ef migrations add ActAppContext --startup-project ..\HogarGestor.App.Consola\
+dotnet ef migrations add ActClases --startup-project ..\HogarGestor.App.Consola\
 
 dotnet ef database update --startup-project ..\HogarGestor.App.Consola\
-
-dotnet ef migrations add ActClases --startup-project ..\HogarGestor.App.Consola\
 
 dotnet add package Microsoft.EntityFrameworkCore --version 6.0.8
 dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.8
@@ -85,6 +84,14 @@ dotnet add reference ../HogarGestor.App.Persistencia/
 // Generacion de un certificado temporal para desarrollo del sitio web local
 dotnet dev-certs https
 
+
+
+https://fonts.google.com/icons?icon.set=Material+Icons
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+-------------------------------------------------------------------------------------------------------------
 // Paginas de Beneficiarios Guardados en memoria
 // Creacion de pagina index
 dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
@@ -99,7 +106,31 @@ dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_Beneficiarios -
 // Creacion de pagina para asignacion de personal medico
 dotnet new page -n AsigPerSalud -na HogarGestor.App.Presentacion.Pages_Beneficiarios -o .\Pages\Beneficiarios\
 
+// Paginas de Familiares en Memoria
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para ver detalles
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para creacion
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+// Creacion de pagina para borrar
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
 
+// Paginas de Personal Salud en memoria
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para creacion
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para ver detalles
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+// Creacion de pagina para borrar
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+
+-------------------------------------------------------------------------------------------------------------
 // Paginas de Beneficiarios en Base de Datos
 // Creacion de pagina index
 dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
@@ -113,37 +144,56 @@ dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_DbBeneficiario
 dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
 // Creacion de pagina para asignacion de personal medico
 dotnet new page -n AsigPerSalud -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
+// Creacion de pagina para asignacion de Familiares
+dotnet new page -n AsigFamiliar -na HogarGestor.App.Presentacion.Pages_DbBeneficiarios -o .\Pages\DbBeneficiarios\
 
-
-
-
-
-https://fonts.google.com/icons?icon.set=Material+Icons
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-// Paginas de Familiares
+// Paginas de Personal Salud en Base de Datos
 // Creacion de pagina index
-dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_DbPersonalSalud -o .\Pages\DPersonalSalud\
 // Creacion de pagina para edicion
-dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_DbPersonalSalud -o .\Pages\DbPersonalSalud\
 // Creacion de pagina para creacion
-dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_DbPersonalSalud -o .\Pages\DbPersonalSalud\
 // Creacion de pagina para ver detalles
-dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_DbPersonalSalud -o .\Pages\DbPersonalSalud\
 // Creacion de pagina para borrar
-dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_Familiares -o .\Pages\Familiares\
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_DbPersonalSalud -o .\Pages\DbPersonalSalud\
 
-// Paginas de Personal Salud
+// Paginas de Historias Clinicas en Base de Datos
 // Creacion de pagina index
-dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_DbHistoriasC -o .\Pages\DbHistoriasC\
 // Creacion de pagina para edicion
-dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
-// Creacion de pagina para creacion
-dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
-// Creacion de pagina para ver detalles
-dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
-// Creacion de pagina para borrar
-dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_PersonalSalud -o .\Pages\PersonalSalud\
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_DbHistoriasC -o .\Pages\DbHistoriasC\
+// Creacion de pagina para 
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_DbHistoriasC -o .\Pages\DbHistoriasC\
+// Creacion de pagina para 
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_DbHistoriasC -o .\Pages\DbHistoriasC\
+// Creacion de pagina para 
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_DbHistoriasC -o .\Pages\DbHistoriasC\
 
+
+// Paginas de Familiares en Base de Datos
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_DbFamiliares -o .\Pages\DbFamiliares\
+// Creacion de pagina para ver detalles
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_DbFamiliares -o .\Pages\DbFamiliares\
+// Creacion de pagina para creacion
+dotnet new page -n Create -na HogarGestor.App.Presentacion.Pages_DbFamiliares -o .\Pages\DbFamiliares\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_DbFamiliares -o .\Pages\DbFamiliares\
+// Creacion de pagina para borrar
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_DbFamiliares -o .\Pages\DbFamiliares\
+// Creacion de pagina para Listar un patron de Crecimiento
+dotnet new page -n IngresarPatronC -na HogarGestor.App.Presentacion.Pages_DbFamiliares -o .\Pages\DbFamiliares\
+// Creacion de pagina para Ingresar un patron de Crecimiento
+dotnet new page -n AdicionPatronC -na HogarGestor.App.Presentacion.Pages_DbFamiliares -o .\Pages\DbFamiliares\
+
+// Paginas de Patrones de Crecimiento en Base de Datos
+// Creacion de pagina index
+dotnet new page -n Index -na HogarGestor.App.Presentacion.Pages_DbPatronesC -o .\Pages\DbPatronesC\
+// Creacion de pagina para edicion
+dotnet new page -n Edit -na HogarGestor.App.Presentacion.Pages_DbPatronesC -o .\Pages\DbPatronesC\
+// Creacion de pagina para 
+dotnet new page -n Details -na HogarGestor.App.Presentacion.Pages_DbPatronesC -o .\Pages\DbPatronesC\
+// Creacion de pagina para 
+dotnet new page -n Delete -na HogarGestor.App.Presentacion.Pages_DbPatronesC -o .\Pages\DbPatronesC\

@@ -1,5 +1,4 @@
-namespace HogarGestor.App.Dominio
-{
+namespace HogarGestor.App.Dominio;
     public class Cls_PatronCrecimiento
     {
         public int  Id {get; set;}
@@ -7,4 +6,3 @@ namespace HogarGestor.App.Dominio
         public float valor {get; set;}
         public TipoPatronC tipoPatronC {get; set;}
     }
-}

@@ -12,10 +12,9 @@ public class DetailsModel : PageModel
 {
     private readonly IRepositorioBeneficiario repositorioBeneficiario; // atributo de Clase
     public Cls_Beneficiario beneficiario { get; set; }
-
+    public Cls_Familiar familiar { get; set; }
     public Cls_PersonalSalud perSaludPediatra { get; set; }
     public Cls_PersonalSalud perSaludNutricionista { get; set; }
-
     public DetailsModel(IRepositorioBeneficiario repositorioBeneficiario)
     { // Metodo constructor de la clase Details (modelo)
         this.repositorioBeneficiario = repositorioBeneficiario;
@@ -29,7 +28,7 @@ public class DetailsModel : PageModel
         }
         else
         {
-            if (beneficiario.pediatra == null)
+            if (repositorioBeneficiario.consultarPS(Id, 1) == null)
             {
                 perSaludPediatra = new Cls_PersonalSalud
                 {
@@ -38,7 +37,11 @@ public class DetailsModel : PageModel
                 };
                 beneficiario.pediatra = perSaludPediatra;
             }
-            if (beneficiario.nutricionista == null)
+            else
+            {
+                beneficiario.pediatra = repositorioBeneficiario.consultarPS(Id, 1);
+            }
+            if (repositorioBeneficiario.consultarPS(Id, 0) == null)
             {
                 perSaludNutricionista = new Cls_PersonalSalud
                 {
@@ -46,6 +49,23 @@ public class DetailsModel : PageModel
                     apellido = "asignado"
                 };
                 beneficiario.nutricionista = perSaludNutricionista;
+            }
+            else
+            {
+                beneficiario.nutricionista = repositorioBeneficiario.consultarPS(Id, 0);
+            }
+            if (repositorioBeneficiario.consultarfamiliar(Id) == null)
+            {
+                familiar = new Cls_Familiar
+                {
+                    nombre = "Sin Familiar",
+                    apellido = "asignado"
+                };
+                beneficiario.familiar = familiar;
+            }
+            else
+            {
+                beneficiario.familiar=repositorioBeneficiario.consultarfamiliar(Id);
             }
             return Page();
         }

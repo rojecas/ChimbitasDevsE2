@@ -1,8 +1,6 @@
-namespace HogarGestor.App.Dominio
+namespace HogarGestor.App.Dominio;
+public class Cls_PersonalSalud : Cls_Persona
 {
-    public class Cls_PersonalSalud : Cls_Persona
-    {
-        public string regRethus {get; set;}
-        public Especialidad especialidad {get; set;}
-    }
+    public string? RegRethus { get; set; }
+    public Especialidad? especialidad { get; set; }
 }

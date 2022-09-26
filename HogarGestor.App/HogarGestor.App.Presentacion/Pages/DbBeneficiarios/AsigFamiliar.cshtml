@@ -1,0 +1,40 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_DbBeneficiarios.AsigFamiliarModel
+@{
+}
+<form method="post">
+    <input type="hidden" asp-for="beneficiario.Id"/>
+    <h1>Asignar Familiar</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Documento</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Parentesco</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Ckeck your choose</th>
+            </tr>
+        </thead>
+        @foreach (var familiar in Model.familiares)
+        {
+            <tbody>
+                <tr>
+                    <td>@familiar.nombre</td>
+                    <td>@familiar.apellido</td>
+                    <td>@familiar.genero</td>
+                    <td>@familiar.documento</td>
+                    <td>@familiar.telefono</td>
+                    <td>@familiar.parentesco</td>
+                    <td>@familiar.email</td>
+                    <td>
+                        <input type="checkbox" name="idFamiliar" value="@familiar.Id"/>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+    <button type="submit" class="btn btn-primary" asp-page-handler="ToAssign">Asignar</button>
+</form>

@@ -36,12 +36,11 @@
             <option selected>Especialidad ...</option>
             <option value=0>Nutricionista</option>
             <option value=1>Pediatra</option>
-            <option value=2>No ingresado</option>
         </select>
     </div>
     <div class="form-group">
         <label>Registro Rethus</label>
-        <input asp-for="perSalud.regRethus" placeholder="Digite el Codigo Rethus del especialista"class="form-control"/>
+        <input asp-for="perSalud.RegRethus" placeholder="Digite el Codigo Rethus del especialista"class="form-control"/>
     </div>
     <button type="submit" class="btn btn-primary" asp-page-handler="Save">Crear Especialista</button>
 </form>

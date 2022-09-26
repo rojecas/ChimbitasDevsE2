@@ -9,10 +9,12 @@ namespace HogarGestor.App.Consola;
 
 class Program
 {
+    //private static IRepositorioBeneficiario _repoBeneficiario = new RepositorioBeneficiario(new Persistencia.AppContext());
     private static IRepositorioBeneficiario _repoBeneficiario = new RepositorioBeneficiario(new Persistencia.AppContext());
     private static IRepositorioFamiliar _repoFamiliar = new RepositorioFamiliar(new Persistencia.AppContext());
-    private static IRepositorioNutricionista _repoNutricionista = new RepositorioNutricionista(new Persistencia.AppContext());
-    private static IRepositorioPediatra _repoPediatra = new RepositorioPediatra(new Persistencia.AppContext());
+    //private static IRepositorioPersonalSalud _repoNutricionista2 = new RepositorioNutricionista(new Persistencia.AppContext());
+    private static IRepositorioPersonalSalud _repoNutricionista = new RepositorioPersonalSalud(new Persistencia.AppContext());
+    private static IRepositorioPersonalSalud _repoPediatra = new RepositorioPersonalSalud(new Persistencia.AppContext());
     static void Main(string[] args)
     {
         Console.Clear();
@@ -239,7 +241,7 @@ class Program
              ciudad = "Bogotá",
              fechaNacimiento = new DateTime (1856,07,10), 
          };*/
-        _repoBeneficiario.AddBeneficiario(beneficiario);
+        _repoBeneficiario.Add(beneficiario);
         Console.WriteLine("Se creó satisfactoriamente el Beneficiario con nombre: " + nombre + " " + apellido);
     }
 
@@ -250,7 +252,7 @@ class Program
         familiar.apellido = apellido;
         familiar.documento = documento;
         familiar.genero = genero;
-        _repoFamiliar.AddFamiliar(familiar);
+        _repoFamiliar.Add(familiar);
         Console.WriteLine("Se creó satisfactoriamente el Familiar con nombre: " + nombre + " " + apellido);
     }
 
@@ -264,7 +266,7 @@ class Program
             nutricionista.documento = documento;
             nutricionista.genero = genero;
             nutricionista.especialidad = Especialidad.Nutricionista;
-            _repoNutricionista.AddNutricionista(nutricionista);
+            _repoNutricionista.Add(nutricionista);
         }
         else
         {
@@ -274,14 +276,14 @@ class Program
             pediatra.documento = documento;
             pediatra.genero = genero;
             pediatra.especialidad = Especialidad.Pediatra;
-            _repoPediatra.AddPediatra(pediatra);
+            _repoPediatra.Add(pediatra);
         }
 
         Console.WriteLine("Se creó satisfactoriamente el " + tipo + " con nombre: " + nombre + " " + apellido);
     }
     private static void ListarBeneficiarios()
     {
-        var beneficiarios = _repoBeneficiario.GetAllBeneficiarios();
+        var beneficiarios = _repoBeneficiario.GetAll();
         Console.WriteLine("Nombres      Apellidos         DocId       Genero");
         Console.WriteLine("______________________________________________________");
         foreach (var beneficiario in beneficiarios)
@@ -292,7 +294,7 @@ class Program
     }
     private static void BuscarBeneficiario(int IdBeneficiario)
     {
-        var beneficiario = _repoBeneficiario.GetBeneficiario(IdBeneficiario);
+        var beneficiario = _repoBeneficiario.Get(IdBeneficiario);
         if (beneficiario != null)
         {
             Console.WriteLine("Nombres      Apellidos         DocId       Genero");
@@ -305,14 +307,14 @@ class Program
     }
     private static void BorrarBeneficiario(int IdBeneficiario)
     {
-        var beneficiario = _repoBeneficiario.GetBeneficiario(IdBeneficiario);
+        var beneficiario = _repoBeneficiario.Get(IdBeneficiario);
         Console.WriteLine("Se borró el usuario con Documento: " + beneficiario.documento);
         Console.WriteLine("y nombre: " + beneficiario.nombre + " " + beneficiario.apellido);
-        _repoBeneficiario.DeleteBeneficiario(IdBeneficiario);
+        _repoBeneficiario.Delete(IdBeneficiario);
     }
     private static void ActualizarBeneficiario(int IdBeneficiario, string nombre, string apellido, string documento, Genero genero, float latitud, float longitud, string ciudad, DateTime fechaNacimiento)
     {
-        var beneficiario = _repoBeneficiario.GetBeneficiario(IdBeneficiario);
+        var beneficiario = _repoBeneficiario.Get(IdBeneficiario);
         Console.WriteLine("Se Actualizo la informacion del usuario con anterior Documento: " + beneficiario.documento);
         Console.WriteLine("y antiguo nombre: " + beneficiario.nombre + " " + beneficiario.apellido);
         beneficiario.nombre = nombre;
@@ -323,7 +325,7 @@ class Program
         beneficiario.longitud = longitud;
         beneficiario.ciudad = ciudad;
         beneficiario.fechaNacimiento = fechaNacimiento;
-        _repoBeneficiario.UpdateBeneficiario(beneficiario);
+        _repoBeneficiario.Update(beneficiario);
     }
 
 }

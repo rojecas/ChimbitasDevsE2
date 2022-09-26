@@ -1,11 +1,9 @@
-namespace HogarGestor.App.Dominio
+namespace HogarGestor.App.Dominio;
+public enum Genero
 {
-    public enum Genero
-    {
-       Masculino,
-       Femenino,
-       Intersexual,
-       NoBinario,
-       NoIngresado 
-    }
+    Masculino,
+    Femenino,
+    Intersexual,
+    NoBinario,
+    NoIngresado
 }

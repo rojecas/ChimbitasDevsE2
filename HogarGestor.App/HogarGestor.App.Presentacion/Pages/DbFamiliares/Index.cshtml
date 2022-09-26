@@ -1,0 +1,54 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_DbFamiliares.IndexModel
+@{
+}
+<h1>Lista de Familiares Responsables de Beneficiarios del Hogar Gestor</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Id: </th>
+            <th scope="col">Nombre: </th>
+            <th scope="col">Apellido: </th>
+            <th scope="col">Genero: </th>
+            <th scope="col">Documento: </th>
+            <th scope="col">Teléfono: </th>
+            <th scope="col">Parentesco: </th>
+            <th scope="col">Email: </th>
+            <th scope="col">Quick Actions: </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var familiar in Model.familiares)
+    {
+        
+            <tr>
+                <td> @familiar.Id </td>
+                <td> @familiar.nombre </td>
+                <td> @familiar.apellido </td>
+                <td> @familiar.genero </td>
+                <td> @familiar.documento </td>                
+                <td> @familiar.telefono </td>
+                <td> @familiar.parentesco </td>
+                <td> @familiar.email </td>
+                <td>
+                    <a asp-page="./Delete" asp-route-id=@familiar.Id><span class="material-icons">delete</span></a>
+                    <a asp-page="./Details" asp-route-id=@familiar.Id><span class="material-icons">info</span></a>
+                    <a asp-page="./Edit" asp-route-id=@familiar.Id><span class="material-icons">edit</span></a>
+                    <a asp-page="./ListarPatronC" asp-route-id=@familiar.Id><span class="material-icons">assignment</span></a>
+                </td>
+            </tr>  
+    }
+    <tr>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>                
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td> ... </td>
+                <td>
+                    <a asp-page="./Create" ><span class="material-icons">person_add_alt</span></a>
+                </td>
+    </tbody>
+</table>

@@ -1,0 +1,39 @@
+﻿@page
+@model HogarGestor.App.Presentacion.Pages_DbHistoriasC.IndexModel
+@{
+}
+<body>
+    <h1>Lista de Historias Clinicas</h1>
+    @* <form method="get" class="formulario">
+        <div class="form-group">
+            <p> Beneficiarios:<input type="text" placeholder="Nombre de el(la) Beneficiario" name="GetFilter"
+                    class="round" />
+                <input type="submit" value="Filter" class="round" />
+            </p>
+        </div>
+    </form> *@
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th scope="col">Sugerencias de Cuidado: </th>
+            <th scope="col"> Quick Actions: </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var historia in Model.historiasClinicas)
+    {
+        <tr>
+            <td>@historia.sugerencias</td>
+            <td >
+                <a asp-Page="./Delete" asp-route-id="@historia.Id"><button ><span class="material-icons">delete</span></button></a>
+                <a asp-Page="./Edit" asp-route-id="@historia.Id"><button ><span class="material-icons">edit</span></button></a>
+                <a asp-Page="./Details" asp-route-id="@historia.Id"><button ><span class="material-icons" >info</span></button></a>
+            </td>
+        </tr>
+    }
+        <tr>
+                <td> ... </td>
+                <td><a asp-page="./Create" ><span class="material-icons">person_add_alt</span></a></td>
+    </tbody>
+</table>
+</body>
